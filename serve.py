@@ -1,9 +1,9 @@
-"""serve.py - serve this folder on this computer, with live reload.
+"""serve.py - serve the TT site (the public/ folder) on this computer, with live reload.
 
     py serve.py               then open http://127.0.0.1:8080
     py serve.py --port 9000   (another port)
 
-An open page reloads by itself about a second after any file here is saved, so an
+An open page reloads by itself about a second after any file in public/ is saved, so an
 edit shows at once. The reload snippet is added by this server while it serves;
 it is never written into the files, so any other host serves them untouched.
 It listens on 127.0.0.1 only: nothing outside this computer can reach it.
@@ -15,7 +15,7 @@ import os
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent / "public"
 RELOAD = b"""<script>/* live reload - added by serve.py while serving; not part of the page */
 (function () {
   var seen = null;
@@ -31,7 +31,7 @@ RELOAD = b"""<script>/* live reload - added by serve.py while serving; not part 
 
 
 def version():
-    """The newest modification time of any file here (dot-folders such as .git are skipped)."""
+    """The newest modification time of any file in public/ (dot-folders are skipped)."""
     newest = 0.0
     for folder, subfolders, files in os.walk(ROOT):
         subfolders[:] = [d for d in subfolders if not d.startswith(".")]
@@ -78,7 +78,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Serve this folder on this computer, with live reload.")
+    ap = argparse.ArgumentParser(description="Serve the TT site (public/) on this computer, with live reload.")
     ap.add_argument("--port", type=int, default=8080)
     args = ap.parse_args()
     try:

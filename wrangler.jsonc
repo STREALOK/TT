@@ -1,0 +1,15 @@
+// Cloudflare Workers settings for the TT site (static pages for now).
+// Nothing is public yet: workers_dev and preview_urls are off, so a deployed version
+// has no address until they are switched on at launch. Request logging is off.
+{
+  "name": "tt",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./public"
+  },
+  "workers_dev": false,
+  "preview_urls": false,
+  "observability": {
+    "enabled": false
+  }
+}
