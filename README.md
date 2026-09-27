@@ -10,7 +10,7 @@ Then open http://127.0.0.1:8080. An open page reloads by itself about a second a
 
 ## Where it will live
 
-The plan: the same files served from two places, this computer and Cloudflare Workers, which keeps the site up while this computer is off, each one the other's fallback. Small edits go live as they are made; a whole set of changes goes out as one push. `wrangler.jsonc` holds the Cloudflare settings: request logging is off, and the site has no public address until launch.
+The plan: the same files served from two places, this computer and Cloudflare Workers, which keeps the site up while this computer is off, each one the other's fallback. Small edits go live as they are made; a whole set of changes goes out as one push. `wrangler.jsonc` holds the Cloudflare settings: request logging is off. The site went public on 27 September 2026 at its workers.dev address.
 
 ## History
 
