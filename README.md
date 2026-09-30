@@ -21,3 +21,5 @@ Every change is a git commit, so the site's history is its own record.
 The code (the page structure, stylesheets, scripts and `serve.py`) is licensed under the GNU Affero General Public License v3.0; see `LICENSE`. The writing (the words on the pages and in the posts) is licensed under Creative Commons Attribution-ShareAlike 4.0 International; see `LICENSES/CC-BY-SA-4.0.txt`.
 
 In short: take anything, give credit, give back the same way.
+# TT
+The Three Tree Tenets
