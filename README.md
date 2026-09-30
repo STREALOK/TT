@@ -2,15 +2,11 @@
 
 This folder is the TT site. The pages are plain HTML and CSS in `public/`, with no build step and nothing to install.
 
-## See it on this computer
+## Where it lives
 
-    py serve.py
+Cloud-hosted only: the pages are served from Cloudflare Workers, so the site stays up while this computer is off. Its public address comes later; until then, the pages and their history are here. `wrangler.jsonc` holds the Cloudflare settings for deploys made from this folder.
 
-Then open http://127.0.0.1:8080. An open page reloads by itself about a second after any file in `public/` is saved, so an edit shows at once. `serve.py` adds that reload while it serves and never writes it into the files. It listens on this computer only.
-
-## Where it will live
-
-The plan: the same files served from two places, this computer and Cloudflare Workers, which keeps the site up while this computer is off, each one the other's fallback. Small edits go live as they are made; a whole set of changes goes out as one push. `wrangler.jsonc` holds the Cloudflare settings: request logging is off. The site went public on 27 September 2026 at its workers.dev address.
+A local connection (hosting from a home computer, or editing the live site from one) waits for later, once the computer and the site both have proper security. `serve.py`, a local preview server, stays here for that step.
 
 ## History
 
