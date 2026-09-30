@@ -1,3 +1,4 @@
+/* TT site. Three-page first post, 29 Sep 2026; colours and type from the 27 Sep build. */
 :root {
   --bg: #f7f5ef;
   --text: #1f2421;
@@ -6,6 +7,8 @@
   --rule: #d9d4c7;
   --violet: #6f4fa0;
   --select: #e4d9f4;
+  --knob: 1;
+  color-scheme: light dark;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,45 +25,94 @@
 
 * { box-sizing: border-box; }
 
-html { -webkit-text-size-adjust: 100%; }
+/* LES-20260919-001: a continuous type scale from the viewport, times a manual knob the reader keeps. */
+html {
+  -webkit-text-size-adjust: 100%;
+  font-size: calc(clamp(16px, 14px + 0.35vw, 20px) * var(--knob));
+}
 
 body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font: 1.125rem/1.6 Georgia, "Times New Roman", serif;
+  font: 1rem/1.65 Georgia, "Times New Roman", serif;
 }
 
 main {
-  max-width: 40rem;
+  max-width: 42rem;
   margin: 0 auto;
-  padding: clamp(3rem, 16vh, 9rem) 1.25rem 4rem;
-}
-
-header {
-  text-align: center;
-  margin-bottom: 3rem;
+  padding: clamp(3.5rem, 10vh, 6rem) 1.25rem 4rem;
 }
 
 h1 {
   margin: 0;
-  font-size: clamp(3.5rem, 12vw, 6rem);
+  font-size: clamp(1.7rem, 1.15rem + 1.6vw, 2.5rem);
   font-weight: normal;
-  letter-spacing: 0.08em;
+  line-height: 1.25;
   color: var(--accent);
 }
 
-.name {
-  margin: 0.25rem 0 0;
+h2 {
+  margin: 0 0 1rem;
+  font-size: 1.55rem;
+  font-weight: normal;
+  line-height: 1.3;
+  color: var(--accent);
+}
+
+h3 {
+  margin: 2.25rem 0 0.75rem;
+  font-size: 1.15rem;
+  font-weight: normal;
+  letter-spacing: 0.03em;
+  color: var(--violet);
+}
+
+p { margin: 0 0 1rem; }
+
+a {
+  color: var(--accent);
+  text-decoration-color: var(--violet);
+  text-underline-offset: 0.15em;
+}
+
+code {
+  font-family: ui-monospace, Consolas, "Courier New", monospace;
+  font-size: 0.95em;
+  color: var(--violet);
+}
+
+.page + .page {
+  margin-top: 4rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--rule);
+}
+
+.page-label {
+  margin: 0 0 1.25rem;
   color: var(--muted);
-  font-size: 1rem;
-  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
+.masthead { margin: 1.25rem 0 2.5rem; }
+.masthead strong { display: block; color: var(--violet); }
+.epigraph, .names, .quotes, .masthead em { display: block; margin-top: 0.85rem; }
+.epigraph { font-style: italic; }
+.names { color: var(--accent); font-size: 0.95rem; }
+.quotes { color: var(--muted); font-size: 0.9rem; line-height: 1.7; }
+.masthead em { color: var(--muted); font-size: 0.9rem; }
+
+.page ul, .page ol {
+  margin: 0 0 1.25rem;
+  padding-left: 1.4rem;
+}
+
+.page li { margin: 0 0 0.6rem; }
+
 .tenets {
   list-style: none;
-  margin: 0;
   padding: 0;
   border-top: 1px solid var(--rule);
   counter-reset: tenet;
@@ -69,89 +121,33 @@ h1 {
 .tenets li {
   counter-increment: tenet;
   display: flex;
-  gap: 1.25rem;
+  gap: 1.1rem;
   align-items: baseline;
-  padding: 1.25rem 0;
+  margin: 0;
+  padding: 1rem 0;
   border-bottom: 1px solid var(--rule);
-  font-size: 1.35rem;
+  font-size: 1.08rem;
 }
 
 .tenets li::before {
   content: counter(tenet);
-  min-width: 1.5rem;
+  min-width: 1.2rem;
   text-align: right;
   color: var(--accent);
 }
 
-::selection {
-  background: var(--select);
-  color: var(--text);
+.pdf {
+  margin: 3.5rem 0 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--rule);
+  border-radius: 0.5rem;
+  text-align: center;
 }
 
-:focus-visible {
-  outline: 2px solid var(--violet);
-  outline-offset: 3px;
-}
-
-/* First post, 2026-09-27: text sections under the tenets. */
-.lede {
-  font-size: 1.2rem;
-  margin: 0 0 2.5rem;
-}
-
-.note {
-  color: var(--muted);
-  font-size: 1rem;
-  margin: 1rem 0 0;
-}
-
-section {
-  margin-top: 3rem;
-}
-
-h2 {
-  margin: 0 0 0.75rem;
-  font-size: 1.5rem;
-  font-weight: normal;
-  letter-spacing: 0.02em;
-  color: var(--accent);
-}
-
-section p {
-  margin: 0 0 1rem;
-}
-
-section ul {
-  margin: 0;
-  padding-left: 1.25rem;
-}
-
-section li {
-  margin: 0 0 0.6rem;
-}
-
-dl {
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  gap: 0.5rem 1.25rem;
-  margin: 0;
-}
-
-dt {
-  color: var(--violet);
-}
-
-dd {
-  margin: 0;
-}
-
-a {
-  color: var(--accent);
-  text-decoration-color: var(--violet);
-}
+.licence { margin-top: 3rem; }
 
 footer {
-  margin-top: 4rem;
+  margin-top: 3.5rem;
   padding-top: 1.25rem;
   border-top: 1px solid var(--rule);
   color: var(--muted);
@@ -159,7 +155,32 @@ footer {
   text-align: center;
 }
 
-@media (max-width: 30rem) {
-  dl { grid-template-columns: 1fr; }
-  dd { margin-bottom: 0.5rem; }
+.knob {
+  position: fixed;
+  top: 0.6rem;
+  right: 0.6rem;
+  display: flex;
+  gap: 0.3rem;
+  z-index: 1;
+}
+
+.knob button {
+  font: 0.8rem/1 Georgia, "Times New Roman", serif;
+  padding: 0.4rem 0.6rem;
+  color: var(--muted);
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.knob button:hover { color: var(--accent); border-color: var(--accent); }
+
+::selection { background: var(--select); color: var(--text); }
+
+:focus-visible { outline: 2px solid var(--violet); outline-offset: 3px; }
+
+@media print {
+  .knob { display: none; }
+  .page + .page { break-before: page; border-top: 0; }
 }
