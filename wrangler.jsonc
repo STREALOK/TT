@@ -1,7 +1,4 @@
-// Cloudflare Workers settings for the TT site (static pages for now).
-// For deploys made from this folder: workers_dev is on. The live site went up by a dashboard upload on 30 Sep 2026,
-// cloud-hosted only; its workers.dev address is not public yet.
-// Preview URLs stay off. Request logging is off in these settings.
+// Cloudflare Workers settings for the TT site: static pages from ./public.
 {
   "name": "tt",
   "compatibility_date": "2026-09-01",
