@@ -1,6 +1,6 @@
 ---
-name: Custom issue template
-about: Describe this issue template's purpose here.
+name: Perspective or question
+about: Share a reading, a question or a perspective on the tenets.
 title: ''
 labels: ''
 assignees: ''
