@@ -1,4 +1,4 @@
-/* TT site. Three-page first post, 29 Sep 2026; colours and type from the 27 Sep build. */
+/* TT site stylesheet. */
 :root {
   --bg: #f7f5ef;
   --text: #1f2421;
@@ -25,7 +25,7 @@
 
 * { box-sizing: border-box; }
 
-/* LES-20260919-001: a continuous type scale from the viewport, times a manual knob the reader keeps. */
+/* A continuous type scale from the viewport, times a manual knob the reader keeps. */
 html {
   -webkit-text-size-adjust: 100%;
   font-size: calc(clamp(16px, 14px + 0.35vw, 20px) * var(--knob));
