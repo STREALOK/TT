@@ -10,13 +10,16 @@
 <meta property="og:title" content="TT: a living method for keeping people, systems and evidence connected.">
 <meta property="og:description" content="TT, the Three Tree Tenets: a living method for keeping people, systems and evidence connected. A public introduction in three pages, free to use under CC BY-SA 4.0 and AGPL-3.0.">
 <link rel="stylesheet" href="style.css">
-<script>try{var k=parseFloat(localStorage.getItem('tt-text-size'));if(isFinite(k))document.documentElement.style.setProperty('--knob',k)}catch(e){}</script>
+<script>try{var k=parseFloat(localStorage.getItem('tt-text-size'));if(isFinite(k))document.documentElement.style.setProperty('--knob',k);var t=localStorage.getItem('tt-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);document.documentElement.setAttribute('data-font',localStorage.getItem('tt-font')||'serif');document.documentElement.setAttribute('data-shadow',localStorage.getItem('tt-shadow')==='on'?'on':'off')}catch(e){}</script>
 </head>
 <body>
 <div class="knob" role="group" aria-label="Text size">
   <button type="button" data-knob="-0.1" aria-label="Smaller text">A&#8722;</button>
   <button type="button" data-knob="0" aria-label="Default text size">A</button>
   <button type="button" data-knob="0.1" aria-label="Larger text">A+</button>
+  <button type="button" data-theme-toggle aria-label="Light or dark" aria-pressed="false">&#9790;</button>
+  <select data-font aria-label="Typeface"><option value="serif">Serif</option><option value="sans">Sans</option><option value="mono">Mono</option></select>
+  <button type="button" data-shadow-toggle aria-label="Text shadow" aria-pressed="false">Shadow</button>
 </div>
 <main>
 <article class="page" id="page-1" aria-labelledby="page-1-label">
@@ -174,5 +177,6 @@ the force with us, within us, and us.</p>
   }
 })();
 </script>
+<script src="ui.js"></script>
 </body>
 </html>
