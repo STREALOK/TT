@@ -9,3 +9,5 @@ __pycache__/
 # Cloudflare / wrangler local state
 .wrangler/
 node_modules/
+tools/prepush-markers.local.txt
+tools/prepush.local.cmd
