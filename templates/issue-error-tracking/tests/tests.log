@@ -1,0 +1,34 @@
+test_approved_metadata_never_overrides_known_provenance_blocks (test_track.LedgerTests.test_approved_metadata_never_overrides_known_provenance_blocks) ... ok
+test_baseline_immutability_and_issue_revision (test_track.LedgerTests.test_baseline_immutability_and_issue_revision) ... ok
+test_booleans_not_counts_weights_revision_confidence (test_track.LedgerTests.test_booleans_not_counts_weights_revision_confidence) ... ok
+test_calendar_utc_and_recording_order (test_track.LedgerTests.test_calendar_utc_and_recording_order) ... ok
+test_cli_init_and_report_refuse_overwrite_and_errors_do_not_echo_data (test_track.LedgerTests.test_cli_init_and_report_refuse_overwrite_and_errors_do_not_echo_data) ... ok
+test_count_provenance_and_unknown_count (test_track.LedgerTests.test_count_provenance_and_unknown_count) ... ok
+test_dangling_trial_and_supersedes (test_track.LedgerTests.test_dangling_trial_and_supersedes) ... ok
+test_digest_is_order_independent_and_attestation_metadata_not_payload (test_track.LedgerTests.test_digest_is_order_independent_and_attestation_metadata_not_payload) ... ok
+test_duplicate_observation_key_rejects_copied_occurrence_counts (test_track.LedgerTests.test_duplicate_observation_key_rejects_copied_occurrence_counts) ... ok
+test_failed_synthetic_check_cannot_be_accepted (test_track.LedgerTests.test_failed_synthetic_check_cannot_be_accepted) ... ok
+test_fixed_document_requires_passing_document_review (test_track.LedgerTests.test_fixed_document_requires_passing_document_review) ... ok
+test_fixed_requires_explicit_time_reason_and_acceptance (test_track.LedgerTests.test_fixed_requires_explicit_time_reason_and_acceptance) ... ok
+test_fixture_pass_does_not_promote_issue (test_track.LedgerTests.test_fixture_pass_does_not_promote_issue) ... ok
+test_huge_numeric_values_are_rejected_without_overflow (test_track.LedgerTests.test_huge_numeric_values_are_rejected_without_overflow) ... ok
+test_later_failure_and_future_evidence_cannot_support_acceptance (test_track.LedgerTests.test_later_failure_and_future_evidence_cannot_support_acceptance) ... ok
+test_logging_events_never_inflate_incident_count (test_track.LedgerTests.test_logging_events_never_inflate_incident_count) ... ok
+test_manual_transition_links_chain_snapshot_and_immutability (test_track.LedgerTests.test_manual_transition_links_chain_snapshot_and_immutability) ... ok
+test_private_report_includes_untriaged_observation_payload (test_track.LedgerTests.test_private_report_includes_untriaged_observation_payload) ... ok
+test_public_omits_private_title_owner_steps_and_fixed_pointers (test_track.LedgerTests.test_public_omits_private_title_owner_steps_and_fixed_pointers) ... ok
+test_public_requires_entire_graph_approval_and_summary (test_track.LedgerTests.test_public_requires_entire_graph_approval_and_summary) ... ok
+test_reader_duplicate_nested_keys_size_records_and_nonfinite (test_track.LedgerTests.test_reader_duplicate_nested_keys_size_records_and_nonfinite) ... ok
+test_render_neutralizes_active_markdown_and_html (test_track.LedgerTests.test_render_neutralizes_active_markdown_and_html) ... ok
+test_screening_binds_revision_text_children_and_source_hash (test_track.LedgerTests.test_screening_binds_revision_text_children_and_source_hash) ... ok
+test_strict_schema_ids_enums_and_duplicate_ids (test_track.LedgerTests.test_strict_schema_ids_enums_and_duplicate_ids) ... ok
+test_superseded_requires_successor_and_cycles_are_rejected (test_track.LedgerTests.test_superseded_requires_successor_and_cycles_are_rejected) ... ok
+test_synthetic_or_failed_trials_cannot_prove_live (test_track.LedgerTests.test_synthetic_or_failed_trials_cannot_prove_live) ... ok
+test_unknown_observed_time_is_preserved_without_inventing_it (test_track.LedgerTests.test_unknown_observed_time_is_preserved_without_inventing_it) ... ok
+test_verification_claims_require_current_trial_revision_and_known_artifact (test_track.LedgerTests.test_verification_claims_require_current_trial_revision_and_known_artifact) ... ok
+test_weights_range_unknown_and_independent_cost (test_track.LedgerTests.test_weights_range_unknown_and_independent_cost) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.082s
+
+OK

@@ -1,0 +1,29 @@
+{
+  "scope": "local synthetic template tests",
+  "passed": 29,
+  "total": 29,
+  "producer_exit_code": 0,
+  "sources": [
+    {
+      "path": "track.py",
+      "bytes": 29683,
+      "sha256": "1255e397493752f2762783f4e8bdc925c4310d7e5a1ab14a6394cb6c992b634f"
+    },
+    {
+      "path": "test_track.py",
+      "bytes": 18298,
+      "sha256": "9531b45ddb6021d59f9310cc81f5fdd38ad2c9dec267e61cf877422d8c68afa1"
+    }
+  ],
+  "log": {
+    "path": "tests/tests.log",
+    "bytes": 4247,
+    "sha256": "0d6ced18725ac9cb4a7970f7c0ee14711f0eb9823438dbdac5ecc74f021b827a"
+  },
+  "empty_ledger_valid": true,
+  "fictional_example_valid": true,
+  "public_projection_checked": true,
+  "recipient_adoption": "unverified",
+  "runtime_global_hook": "not implemented",
+  "publication": "not performed"
+}

@@ -1,0 +1,128 @@
+{
+  "format": "issue-error-template/1",
+  "version": "0.1",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2565,
+      "sha256": "ac6a375d1ef1838c839b46c10d1d4c4e712c3a711eb411f81e1b6d62c4aa2a97"
+    },
+    {
+      "path": "SCHEMA.md",
+      "bytes": 6597,
+      "sha256": "af1b18f19e1f78cf6b69bb2781f466c0ff5437ba6d76f68f2d60f43f4d003c4f"
+    },
+    {
+      "path": "SCORING.md",
+      "bytes": 1552,
+      "sha256": "3c9daba2fc043cd117cdf4f97d07524a699c229fbe3acd9e3732e04a3855a6ba"
+    },
+    {
+      "path": "WORKFLOW.md",
+      "bytes": 2573,
+      "sha256": "d0ca2a6cd66c9d4401c6a198498248549fbb1b820e4c1e4ed18ab104bf4b0bbb"
+    },
+    {
+      "path": "ISSUE-RECORD.md",
+      "bytes": 2414,
+      "sha256": "3eefb8af571c6aa60acc4f6da9f3086928067856ad3d3285638eefe42ff014df"
+    },
+    {
+      "path": "ERROR-RECORD.md",
+      "bytes": 1570,
+      "sha256": "9974d21e5fdc7a16670322911700c4304a2ffd883e1cafaebf05bc810b206a16"
+    },
+    {
+      "path": "PUBLICATION-SCREENING.md",
+      "bytes": 1774,
+      "sha256": "c1de66294ec4ce41d580eba29e002bc38a7d6cb7202cb7f15e4b3f4971c3c3eb"
+    },
+    {
+      "path": "RAPPORTSKJEMA-NO.md",
+      "bytes": 2882,
+      "sha256": "ca73f8a4898de9734cadf893b3fe84cb0b826cb1a009105faa274581fa3a92d4"
+    },
+    {
+      "path": "FIRST-POST-EN.md",
+      "bytes": 1234,
+      "sha256": "21a6e1451e26dff5659a133c317470155907f022d0a8632ad2abd771e2fed9d0"
+    },
+    {
+      "path": "FIRST-POST-NO.md",
+      "bytes": 1418,
+      "sha256": "bb041933c389ddb6ac66ff6a5f75f4ba538fd3bc158d84a88690d646bd283482"
+    },
+    {
+      "path": "GITHUB-ISSUE-REPORT.md",
+      "bytes": 1500,
+      "sha256": "54bf8a6a110ecea84dc76ab2fa22f38b712f9f7248684a935afb66d6a638c343"
+    },
+    {
+      "path": "GITHUB-ERROR-REPORT.md",
+      "bytes": 1226,
+      "sha256": "1de0e3c1c07b72c1b42eecdd7ff73fd2ec9564dde885526b103a3480bfd2a5bc"
+    },
+    {
+      "path": "track.py",
+      "bytes": 29683,
+      "sha256": "1255e397493752f2762783f4e8bdc925c4310d7e5a1ab14a6394cb6c992b634f"
+    },
+    {
+      "path": "test_track.py",
+      "bytes": 18298,
+      "sha256": "9531b45ddb6021d59f9310cc81f5fdd38ad2c9dec267e61cf877422d8c68afa1"
+    },
+    {
+      "path": "ledger.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 34523,
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "path": "SCHEMA.json",
+      "bytes": 2046,
+      "sha256": "23ea4f1d765e82ceed324df3f81605ea72737b46f1408adede8630da02e3b253"
+    },
+    {
+      "path": "tests/tests.log",
+      "bytes": 4247,
+      "sha256": "0d6ced18725ac9cb4a7970f7c0ee14711f0eb9823438dbdac5ecc74f021b827a"
+    },
+    {
+      "path": "tests/TEST-RESULTS.json",
+      "bytes": 783,
+      "sha256": "c8a50111182d01e2b98b4fca44fbe668d0ee5f0f1c561c04c97aec82f7807742"
+    },
+    {
+      "path": "tests/EXAMPLE-LOCAL.md",
+      "bytes": 2629,
+      "sha256": "ce4de1818598f73c3f95891f0457bf395a1ebcc3b55e5b89b7c58b4f1e5cbafd"
+    },
+    {
+      "path": "tests/EXAMPLE-PUBLIC.md",
+      "bytes": 342,
+      "sha256": "d48226bceb98970233e9d5a93b4061d33e96ade0f7490bbd04239c03d5ded55a"
+    },
+    {
+      "path": "optional/README.md",
+      "bytes": 189,
+      "sha256": "417df3fadca0fb4d8ebc3e2efa4f5c1656e69ee18fbd0e0daf865dfc575a6bde"
+    },
+    {
+      "path": "optional/example.jsonl",
+      "bytes": 2609,
+      "sha256": "c9ac1e0c5b85a7c02fa9653aec34e1186679ed179cb213a766a9087987d2a64e"
+    },
+    {
+      "path": "optional/screened-fictional-example.jsonl",
+      "bytes": 3011,
+      "sha256": "7c35e1c5920203b6f5e49ad2238fb2a7ecd55551c714b7344c047983bf153a72"
+    }
+  ],
+  "private_live_records_included": false,
+  "publication": "not performed"
+}

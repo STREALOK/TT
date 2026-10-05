@@ -1,0 +1,4 @@
+dictionary: 8 entries (HUMAN.md 4, FORMAL.md 2, MATH.md 2); confirmed 7/8; digest 8cf463098d46343b
+OK: every entry parses, no duplicates, every Confirmed term has its owner, every look-alike has its crosswalk
+dictionary: 14 entries (TT-COLLECTED.md); confirmed 14/14; digest d59fc1525d4c9ae1
+OK: every entry parses, no duplicates, every Confirmed term has its owner, every look-alike has its crosswalk
