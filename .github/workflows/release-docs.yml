@@ -1,0 +1,56 @@
+# Publish repository documents as a Release.
+#
+# Trigger: by hand (Actions tab -> "Release documents" -> Run workflow). Give a tag and the paths to attach,
+# space-separated; folders are attached as one zip each. No secrets are needed: the built-in GITHUB_TOKEN creates
+# the Release. Nothing here changes the repository's files.
+name: Release documents
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag (for example dictionary-2026-10-05)"
+        required: true
+      title:
+        description: "Release title"
+        required: true
+        default: "TT dictionary"
+      paths:
+        description: "Files or folders to attach, space-separated (a folder becomes one zip)"
+        required: true
+        default: "templates/dictionary"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Gather the attachments
+        run: |
+          mkdir -p out
+          for p in ${{ github.event.inputs.paths }}; do
+            if [ -d "$p" ]; then
+              name=$(basename "$p")
+              (cd "$(dirname "$p")" && zip -qr "$GITHUB_WORKSPACE/out/$name.zip" "$name")
+            elif [ -f "$p" ]; then
+              cp "$p" out/
+            else
+              echo "not found: $p" && exit 1
+            fi
+          done
+          ( cd out && sha256sum * > MANIFEST.txt )
+          ls -la out
+
+      - name: Publish as a Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.event.inputs.tag }}
+          name: ${{ github.event.inputs.title }}
+          body: |
+            Attached from commit ${{ github.sha }}. MANIFEST.txt holds the sha256 of every file.
+          files: out/*
