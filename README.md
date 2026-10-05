@@ -8,6 +8,8 @@ The site is served by Cloudflare Workers, and `wrangler.jsonc` holds its setting
 
 The Norwegian edition («norsk utgave») lives beside it: the page [public/no/index.html](public/no/index.html), and the same four parts as one PDF, [public/no/TT-first-post.pdf](public/no/TT-first-post.pdf).
 
+The second post (5 October 2026) hands over two of TT's tools as templates, and explains them: the page [public/second-post/index.html](public/second-post/index.html) and its PDF [public/second-post/TT-second-post.pdf](public/second-post/TT-second-post.pdf); in Norwegian, [public/no/second-post/index.html](public/no/second-post/index.html) and [public/no/second-post/TT-second-post.pdf](public/no/second-post/TT-second-post.pdf), with a fourth part on how it was translated.
+
 ## Templates
 
 Two of the systems TT runs on, shipped bare so anyone can copy and run them. Both are plain Python with nothing to install; each folder has its own README, a checker with a self-test, and an optional layer of worked examples kept apart from the bare files.
