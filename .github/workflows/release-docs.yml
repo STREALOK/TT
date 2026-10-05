@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # actions/checkout, major version 4, pinned to its commit
 
       - name: Gather the attachments
         run: |
@@ -47,7 +47,7 @@ jobs:
           ls -la out
 
       - name: Publish as a Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65  # softprops/action-gh-release, major version 2, pinned to its commit
         with:
           tag_name: ${{ github.event.inputs.tag }}
           name: ${{ github.event.inputs.title }}

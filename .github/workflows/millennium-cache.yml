@@ -89,7 +89,7 @@ jobs:
           cat out/MANIFEST.txt
 
       - name: Publish as a Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65  # softprops/action-gh-release, major version 2, pinned to its commit
         with:
           tag_name: ${{ github.event.inputs.release_tag != '' && github.event.inputs.release_tag || format('millennium-cache-{0}', github.run_number) }}
           name: Millennium statements cache (${{ github.run_number }})

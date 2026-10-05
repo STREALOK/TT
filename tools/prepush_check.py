@@ -43,6 +43,7 @@ NUMBER_RX = re.compile(r"(?<![\w.\-/#])\d{2,}(?:[.,]\d+)?(?![\w.\-/%])|\b" + NUM
 COUNTED_RX = re.compile(r"\b(?:counted|measured|as of|talt|målt|per \d)|\(\d{1,2} \w+ 20\d\d\)", re.I)
 SKIP_NUMBER_RX = re.compile(r"\b(?:Part|Del|Page|Side) \d+ (?:of|av) \d+|\b(?:19|20)\d\d\b|\d+\.\d+\.\d+|\bv\d|CC BY-SA \d|AGPL-?\d|\d{1,2} (?:January|February|March|April|May|June|July|August|September|October|November|December|januar|februar|mars|april|mai|juni|juli|august|september|oktober|november|desember)\b", re.I)
 TEXT_EXT = (".md", ".html", ".txt")
+SELF = "tools/prepush_check.py"  # exempt from its own scan (6 Oct 2026: v8 stopped on its own selftest lines)
 
 
 def load_markers(root):
@@ -91,6 +92,8 @@ def check(lines, markers=(), mask=None):
     stops, numbers = [], []
     pats = INTERNAL + list(markers)
     for path, ln in lines:
+        if path.replace("\\", "/").endswith(SELF):
+            continue  # the checker's own text is made of the things it stops on (patterns, selftest lines); it is read by hand, not by itself
         for rx, why in pats:
             rx = re.compile(rx, re.I) if isinstance(rx, str) else rx
             if rx.search(ln):
@@ -131,8 +134,9 @@ def selftest():
     s, n = check([("a.py", "x = 12345")]); ok += (not n); print("6 code files are not scanned for numbers", not n)
     s, n = check([("a.md", "the secret word is pineapple")], markers=[(re.compile("pineapple"), "local marker")]); ok += bool(s); print("7 a local marker stops", bool(s))
     s, n = check([("a.md", "hello ship")], mask=lambda t: t.replace("ship", "[x]")); ok += bool(s) and "withheld" in s[0][2]; print("8 a masked term stops and is not echoed", bool(s))
-    print(f"prepush_check selftest: {ok}/8")
-    return 0 if ok == 8 else 1
+    s, n = check([("tools/prepush_check.py", "files live at C:\\TT\\public")]); ok += (not s); print("9 the checker's own file is exempt", not s)
+    print(f"prepush_check selftest: {ok}/9")
+    return 0 if ok == 9 else 1
 
 
 def main(argv):
