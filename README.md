@@ -6,6 +6,8 @@ This repository holds the TT site: plain HTML and CSS in `public/`, with no buil
 
 The site is served by Cloudflare Workers, and `wrangler.jsonc` holds its settings. Its public address comes later; until then, the first post can be read here as a PDF: [public/TT-first-post.pdf](public/TT-first-post.pdf).
 
+The Norwegian edition («norsk utgave») lives beside it: the page [public/no/index.html](public/no/index.html), and the same four parts as one PDF, [public/no/TT-first-post.pdf](public/no/TT-first-post.pdf).
+
 ## History
 
 Every change is a git commit, so the site's history is its own record.
