@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TT, the Three Tree Tenets — second post</title>
+<meta name="description" content="Second post: two of TT&#x27;s own systems, shipped bare, so you can run them.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="../style.css">
+<script>try{var k=parseFloat(localStorage.getItem('tt-text-size'));if(isFinite(k))document.documentElement.style.setProperty('--knob',k);var t=localStorage.getItem('tt-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);var f=localStorage.getItem('tt-font');if(f)document.documentElement.setAttribute('data-font',f);if(localStorage.getItem('tt-shadow')==='on')document.documentElement.setAttribute('data-shadow','on');}catch(e){}</script>
+</head>
+<body>
+<div class="knob" role="group" aria-label="Text size">
+  <button type="button" data-knob="-0.1" aria-label="Smaller text">A&#8722;</button>
+  <button type="button" data-knob="0" aria-label="Default text size">A</button>
+  <button type="button" data-knob="0.1" aria-label="Larger text">A+</button>
+  <button type="button" data-theme-toggle aria-label="Light or dark" aria-pressed="false">&#9790;</button>
+  <select data-font aria-label="Typeface"><option value="serif">Serif</option><option value="sans">Sans</option><option value="mono">Mono</option></select>
+  <button type="button" data-shadow-toggle aria-label="Text shadow" aria-pressed="false">Shadow</button>
+</div>
+<main>
+<article class="page" id="part-1" aria-labelledby="part-1-label">
+<p class="page-label" id="part-1-label">Part 1 of 3 · Second post: two of TT&#x27;s own systems, shipped bare, so you can run them.</p>
+<h1 class="part">Second post: two of TT's own systems, shipped bare, so you can run them.</h1>
+<p><em>A public follow-up to the first post · 5 October 2026 · written by two AI assistants from the originator's notes and direction · the first post, in English and Norwegian, is at the same address</em></p>
+<p><strong>What this post is.</strong> The first post said what TT is: a developing way for people and AI systems to investigate, make, correct and share work together, under three tenets. It also said what TT was not yet: proof. This post is the first piece of that proof, in the only form proof should take on a public page: things you can run. Two of the systems TT has used on itself every day since September are now in the repository as templates, each bare, each with a checker and a self-test, each with an optional layer of worked examples kept apart from the bare files.</p>
+<p><strong>Why bare.</strong> A template that arrives full of someone else's vocabulary is a template you will spend a week emptying. Each of these ships with just enough entries to show every rule once: one confirmed term, one unresolved term, one pair of look-alikes kept apart; one issue, one observed error, one fix trial. Everything else is yours to add. The optional layer, where there is one, is a screened extract of TT's own records, so you can see the template carrying real weight, and delete it the moment you have your own.</p>
+<p><strong>Why a checker.</strong> A rule that has to be remembered has already failed. That line is TT's, learned the hard way, and it is why each template comes with a small plain-Python script, nothing to install, that refuses the mistakes the rule exists to prevent. The checker does not know whether your meanings are true or your fixes are good. It knows whether the record is well formed, whether something was promoted without its owner's word, whether two things that look alike have been told apart in writing. That is a smaller promise than it sounds, and it is the one a machine can keep.</p>
+<p><strong>Where it lives.</strong> The repository is public under the same licences as the first post: AGPL-3.0 for code, CC BY-SA 4.0 for writing. The <code>templates/</code> folder holds both systems; the README points at each. Take anything, give credit, give back the same way.</p>
+</article>
+<article class="page" id="part-2" aria-labelledby="part-2-label">
+<p class="page-label" id="part-2-label">Part 2 of 3 · The dictionary: one vocabulary, three views, one rule.</p>
+<h2 class="part">The dictionary: one vocabulary, three views, one rule.</h2>
+<p><strong>The problem it solves.</strong> Every project grows its own words. Some are coined on purpose; most arrive sideways, used before anyone has said what they mean, and by the time two people disagree about one, each has been using it for a month. Worse: words that resonate get promoted. A phrase that sounds right is treated as settled because it sounds right, and the person who coined it is never asked. TT calls this silent promotion, and the dictionary exists to make it impossible.</p>
+<p><strong>The one rule.</strong> A term is <strong>Confirmed</strong> only when its owner has stated its meaning plainly, in their own words, and that statement is written on the entry. Until then it is <strong>Unresolved</strong>: a reading someone made, marked as a reading, kept so it can be checked, never promoted by habit. The checker refuses a Confirmed term that carries no owner statement.</p>
+<p><strong>Three views.</strong> The same vocabulary is held from three sides. <code>HUMAN.md</code> holds the words people use, as they use them. <code>FORMAL.md</code> holds the words a tool or a rule gives a fixed meaning to, and each of those entries must say where that meaning executes, so a word can be read against the thing that enforces it. <code>MATH.md</code> holds the words with a number or a test behind them, and each must say how it is measured. All three share one line grammar, so one checker reads them all, and a line that looks like an entry and does not parse is an error, not a warning.</p>
+<p><strong>Look-alikes.</strong> Two terms can share an outward shape, the same act, the same first letters, the same sound, and mean different things underneath. The dictionary calls these a look-alike pair and keeps them apart with a crosswalk on each side that names the other and says how they differ. The template's own example is handoff and dropoff: both pass something over; in one the giver is still there to answer, in the other nobody is present. Same signature, different thing. The checker flags a pair whose names share a stem and carry no crosswalk, so the difference is written down before someone assumes it away.</p>
+<p><strong>What you run.</strong> <code>python3 check_dictionary.py</code> checks the three files beside it and prints one line: how many entries, how many confirmed, and a digest. Two people who hold the same dictionary get the same digest; that is how you confirm, in one line, that you are reading from the same page. <code>--selftest</code> runs the checker on itself. <code>EXPECTED-OUTPUT.txt</code> sits beside it so you can compare.</p>
+<p><strong>The optional layer.</strong> <code>optional/TT-COLLECTED.md</code> is fourteen of TT's own terms in the template's grammar, each with the public wording its author approved. Three of them repeat the bare template's examples on purpose, so you can hold the example and the real entry side by side.</p>
+</article>
+<article class="page" id="part-3" aria-labelledby="part-3-label">
+<p class="page-label" id="part-3-label">Part 3 of 3 · Issue and error tracking: separate records, a score in the open, a checker.</p>
+<h2 class="part">Issue and error tracking: separate records, a score in the open, a checker.</h2>
+<p><strong>The problem it solves.</strong> Most issue lists mix four things into one line: the problem, the times it was seen, the fixes that were tried, and the edits someone made to the record. Once they are mixed, nobody can say how many times a thing actually happened, which fix was actually tested, or whether a closed issue was closed by evidence or by tidiness. The template keeps the four apart: an issue, an observed error, a fix trial and a record change are each their own record, linked by id.</p>
+<p><strong>The score.</strong> Each issue can carry five dimensions, scored one to five: impact, reach, recurrence, persistence, and how hard the change is to roll back. The weighted total runs from ten to fifty and is a triage number, nothing more. Confidence and the cost of verifying stay separate from it, on purpose: a loud issue you are unsure of and a quiet one you have proven are different animals, and a single number that averaged them would hide exactly what you need to know. A missing dimension leaves the total unscored rather than defaulted; a synthetic pass does not count as a repair in use.</p>
+<p><strong>What you run.</strong> <code>python3 track.py init ledger.jsonl</code> makes an empty ledger. <code>check</code> validates it: structure, references between records, scores, declared test scope, recorded screening. <code>report</code> builds a local report, and <code>report --public</code> a lighter one that omits private titles, owners, steps and origin pointers, so a problem whose supporting record must stay private can still be described in public. <code>python3 -m unittest test_track.py</code> runs twenty-nine tests. The optional layer is a fictional ledger, nothing from TT's own records, there to show the forms filled in.</p>
+<p><strong>How to report to TT.</strong> The repository now carries two forms beside the usual bug report: an issue report, for a problem that needs investigation or a change, and an error observation, for one event seen once, without assuming its cause. Both are plain text; both ask for what you expected, what you observed, and reproduction steps if you have them, or the honest line that reproduction is unknown. For a wording or translation concern, a short excerpt and your proposed wording is enough. Causes stay labelled unknown, suspected or demonstrated until the evidence moves them. The full policy, in English and Norwegian, is in the template folder.</p>
+<p><strong>What comes next.</strong> The first post promised the method; this one hands over two of its tools. A third, the research lab TT runs its stranger questions through, is held back for a later post, because it is still the part of TT that is not always reliable, and a tool goes public here only when its checker can say so.</p>
+<p><em>Licence: the writing on this page is CC BY-SA 4.0, the code in the templates AGPL-3.0. Written with AI help, from the originator's notes and direction. The Norwegian edition of this post is at the same address.</em></p>
+</article>
+<p class="pdf"><a href="TT-second-post.pdf">All 3 parts as one PDF</a></p>
+<section class="licence">
+  <h2>Licence</h2>
+  <p>The writing on this page is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>; the code in the templates under <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL-3.0</a>. Take anything, give credit, give back the same way.</p>
+</section>
+<footer><p>&lt;3 TT &lt;3</p></footer>
+</main>
+<script src="../ui.js"></script>
+</body>
+</html>

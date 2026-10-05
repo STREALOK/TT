@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TT, the Three Tree Tenets — andre innlegg, norsk utgave</title>
+<meta name="description" content="Andre innlegg: to av TTs egne systemer, levert nakne, så du kan kjøre dem.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="../../style.css">
+<script>try{var k=parseFloat(localStorage.getItem('tt-text-size'));if(isFinite(k))document.documentElement.style.setProperty('--knob',k);var t=localStorage.getItem('tt-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);var f=localStorage.getItem('tt-font');if(f)document.documentElement.setAttribute('data-font',f);if(localStorage.getItem('tt-shadow')==='on')document.documentElement.setAttribute('data-shadow','on');}catch(e){}</script>
+</head>
+<body>
+<div class="knob" role="group" aria-label="Tekststørrelse">
+  <button type="button" data-knob="-0.1" aria-label="Mindre tekst">A&#8722;</button>
+  <button type="button" data-knob="0" aria-label="Vanlig tekststørrelse">A</button>
+  <button type="button" data-knob="0.1" aria-label="Større tekst">A+</button>
+  <button type="button" data-theme-toggle aria-label="Lys eller mørk" aria-pressed="false">&#9790;</button>
+  <select data-font aria-label="Skrift"><option value="serif">Serif</option><option value="sans">Sans</option><option value="mono">Mono</option></select>
+  <button type="button" data-shadow-toggle aria-label="Tekstskygge" aria-pressed="false">Shadow</button>
+</div>
+<main>
+<article class="page" id="part-1" aria-labelledby="part-1-label">
+<p class="page-label" id="part-1-label">Del 1 av 4 · Andre innlegg: to av TTs egne systemer, levert nakne, så du kan kjøre dem.</p>
+<h1 class="part">Andre innlegg: to av TTs egne systemer, levert nakne, så du kan kjøre dem.</h1>
+<p><em>En offentlig oppfølger til det første innlegget · 5. oktober 2026 · skrevet av to KI-assistenter ut fra opphavspersonens notater og retning · det første innlegget, på engelsk og norsk, ligger på samme adresse</em></p>
+<p><strong>Hva dette innlegget er.</strong> Det første innlegget sa hva TT er: en metode under utvikling for at mennesker og KI-systemer skal kunne undersøke, lage, rette og dele arbeid sammen, under tre grunnsetninger. Det sa også hva TT ennå ikke var: bevis. Dette innlegget er den første biten av det beviset, i den eneste formen bevis bør ha på en offentlig side: ting du kan kjøre. To av systemene TT har brukt på seg selv hver dag siden september ligger nå i repoet som maler, hver av dem naken, hver med en sjekker og en selvtest, hver med et valgfritt lag av gjennomarbeidede eksempler holdt adskilt fra de nakne filene.</p>
+<p><strong>Hvorfor nakne.</strong> En mal som kommer full av andres ordforråd er en mal du bruker en uke på å tømme. Hver av disse leveres med akkurat nok innhold til å vise hver regel én gang: ett bekreftet ord, ett uavklart ord, ett par forvekslingsord holdt fra hverandre; én sak, én observert feil, ett utbedringsforsøk. Alt annet er ditt å legge til. Det valgfrie laget, der det finnes, er et gjennomgått utdrag av TTs egne poster, så du kan se malen bære ekte vekt, og slette det i samme øyeblikk du har dine egne.</p>
+<p><strong>Hvorfor en sjekker.</strong> En regel som må huskes har allerede sviktet. Den setningen er TTs, lært på den harde måten, og den er grunnen til at hver mal kommer med et lite skript i ren Python, ingenting å installere, som nekter å godta de feilene regelen finnes for å hindre. Sjekkeren vet ikke om betydningene dine er sanne eller om utbedringene dine er gode. Den vet om posten er velformet, om noe ble rykket opp uten eierens ord, om to ting som ligner hverandre er skilt fra hverandre skriftlig. Det er et mindre løfte enn det høres ut som, og det er det løftet en maskin kan holde.</p>
+<p><strong>Hvor det ligger.</strong> Repoet er offentlig under de samme lisensene som det første innlegget: AGPL-3.0 for kode, CC BY-SA 4.0 for tekst. Mappen <code>templates/</code> holder begge systemene; README peker på hver av dem. Ta hva som helst, gi kreditt, gi tilbake på samme måte.</p>
+</article>
+<article class="page" id="part-2" aria-labelledby="part-2-label">
+<p class="page-label" id="part-2-label">Del 2 av 4 · Ordboken: ett ordforråd, tre sider, én regel.</p>
+<h2 class="part">Ordboken: ett ordforråd, tre sider, én regel.</h2>
+<p><strong>Problemet den løser.</strong> Hvert prosjekt gror sine egne ord. Noen lages med vilje; de fleste kommer inn sidelengs, brukt før noen har sagt hva de betyr, og innen to personer er uenige om ett av dem, har hver av dem brukt det i en måned. Verre: ord som klinger, rykker opp. En vending som høres riktig ut, behandles som avgjort fordi den høres riktig ut, og den som laget den blir aldri spurt. TT kaller dette stille opprykk, og ordboken finnes for å gjøre det umulig.</p>
+<p><strong>Den ene regelen.</strong> Et ord er <strong>Bekreftet</strong> (Confirmed) først når eieren har sagt rett ut hva det betyr, med egne ord, og det utsagnet står på posten. Inntil da er det <strong>Uavklart</strong> (Unresolved): en lesning noen har gjort, merket som en lesning, oppbevart så den kan sjekkes, aldri rykket opp av vane. Sjekkeren nekter et bekreftet ord som ikke bærer eierens utsagn.</p>
+<p><strong>Tre sider.</strong> Det samme ordforrådet holdes fra tre kanter. <code>HUMAN.md</code> holder ordene folk bruker, slik de bruker dem. <code>FORMAL.md</code> holder ordene et verktøy eller en regel gir en fast betydning, og hver av de postene må si hvor den betydningen utføres, så et ord kan leses mot det som håndhever det. <code>MATH.md</code> holder ordene med et tall eller en test bak seg, og hver må si hvordan den måles. Alle tre deler én linjegrammatikk, så én sjekker leser dem alle, og en linje som ser ut som en post uten å la seg lese, er en feil, ikke en advarsel.</p>
+<p><strong>Forvekslingsord.</strong> To ord kan dele ytre form, samme handling, samme første bokstaver, samme klang, og bety ulike ting under. Ordboken kaller dem et forvekslingspar og holder dem fra hverandre med en kryssreferanse (crosswalk) på hver side som navngir det andre og sier hvordan de skiller seg. Malens eget eksempel er overlevering (handoff) og avlevering (dropoff): begge gir noe videre; i den ene er giveren fortsatt der for å svare, i den andre er ingen til stede. Samme signatur, ulik ting. Sjekkeren flagger et par hvis navn deler stamme uten kryssreferanse, så forskjellen står skrevet før noen antar den bort.</p>
+<p><strong>Det du kjører.</strong> <code>python3 check_dictionary.py</code> sjekker de tre filene ved siden av seg og skriver én linje: hvor mange poster, hvor mange bekreftet, og en kontrollsum (digest). To personer som holder samme ordbok får samme kontrollsum; slik bekrefter dere, på én linje, at dere leser fra samme side. <code>--selftest</code> kjører sjekkeren på seg selv. <code>EXPECTED-OUTPUT.txt</code> ligger ved siden av, til å sammenligne med.</p>
+<p><strong>Det valgfrie laget.</strong> <code>optional/TT-COLLECTED.md</code> er fjorten av TTs egne ord i malens grammatikk, hvert med den offentlige ordlyden opphavspersonen har godkjent. Tre av dem gjentar den nakne malens eksempler med vilje, så du kan holde eksemplet og den ekte posten side om side.</p>
+</article>
+<article class="page" id="part-3" aria-labelledby="part-3-label">
+<p class="page-label" id="part-3-label">Del 3 av 4 · Feil- og sakssporing: adskilte poster, en poengsum i det åpne, en sjekker.</p>
+<h2 class="part">Feil- og sakssporing: adskilte poster, en poengsum i det åpne, en sjekker.</h2>
+<p><strong>Problemet den løser.</strong> De fleste feillister blander fire ting i én linje: problemet, gangene det ble sett, utbedringene som ble prøvd, og endringene noen gjorde i posten. Når de først er blandet, kan ingen si hvor mange ganger en ting faktisk skjedde, hvilken utbedring som faktisk ble testet, eller om en lukket sak ble lukket av bevis eller av ryddetrang. Malen holder de fire fra hverandre: en sak, en observert feil, et utbedringsforsøk og en endring i posten er hver sin post, lenket med id.</p>
+<p><strong>Poengsummen.</strong> Hver sak kan bære fem dimensjoner, hver fra én til fem: konsekvens, rekkevidde, gjentakelse, varighet, og hvor vanskelig endringen er å rulle tilbake. Den vektede summen går fra ti til femti og er et prioriteringstall, ikke noe mer. Tillit og kostnaden ved å verifisere holdes utenfor, med vilje: en høylytt sak du er usikker på og en stille sak du har bevist er ulike dyr, og ett tall som snittet dem ville skjule nettopp det du trenger å vite. En manglende dimensjon lar summen stå uskåret i stedet for å få en standardverdi; en syntetisk bestått test teller ikke som en utbedring i bruk.</p>
+<p><strong>Det du kjører.</strong> <code>python3 track.py init ledger.jsonl</code> lager et tomt register. <code>check</code> validerer det: struktur, referanser mellom poster, poengsummer, erklært testomfang, registrert gjennomgang. <code>report</code> bygger en lokal rapport, og <code>report --public</code> en lettere som utelater private titler, eiere, trinn og opphavspekere, så et problem hvis underlag må forbli privat likevel kan beskrives offentlig. <code>python3 -m unittest test_track.py</code> kjører tjueni tester. Det valgfrie laget er et oppdiktet register, ingenting fra TTs egne poster, der for å vise skjemaene utfylt.</p>
+<p><strong>Hvordan melde fra til TT.</strong> Repoet bærer nå to skjemaer ved siden av den vanlige feilrapporten: en saksrapport, for et problem som trenger undersøkelse eller en endring, og en feilobservasjon, for én hendelse sett én gang, uten å anta årsaken. Begge er ren tekst; begge ber om hva du forventet, hva du observerte, og trinn for å gjenskape det om du har dem, eller den ærlige linjen om at gjenskaping er ukjent. For et spørsmål om ordlyd eller oversettelse holder det med et kort utdrag og din foreslåtte ordlyd. Årsaker forblir merket ukjent, mistenkt eller påvist til bevisene flytter dem. Hele retningslinjen, på engelsk og norsk, ligger i malmappen (<code>RAPPORTSKJEMA-NO.md</code>, <code>FEIL-OG-SAKSPOLITIKK-NO.md</code>).</p>
+<p><strong>Hva som kommer.</strong> Det første innlegget lovet metoden; dette gir fra seg to av verktøyene dens. Et tredje, forskningslaben TT kjører sine rarere spørsmål gjennom, holdes tilbake til et senere innlegg, fordi det fortsatt er den delen av TT som ikke alltid er pålitelig, og et verktøy blir offentlig her først når sjekkeren dets kan si det.</p>
+<p><em>Lisens: teksten på denne siden er CC BY-SA 4.0, koden i malene AGPL-3.0. Skrevet med KI-hjelp, ut fra opphavspersonens notater og retning. Den engelske utgaven av dette innlegget ligger på samme adresse.</em></p>
+</article>
+<article class="page" id="part-4" aria-labelledby="part-4-label">
+<p class="page-label" id="part-4-label">Del 4 av 4 · Oversettelsen: metode og begrunnelse.</p>
+<h2 class="part">Oversettelsen: metode og begrunnelse.</h2>
+<p>Regelen er den samme som for det første innlegget: et ord oversettes som normalt når det finnes en norsk oversettelse i bruk, også en ufullkommen en; bare et ord uten noe spor av bruk siteres 1:1, med den norske vi finner eller lager i parentes etter. Fil- og kommandonavn står alltid uoversatt, fordi de er det du skriver.</p>
+<p><strong>Sitert 1:1, med norsk i parentes</strong></p>
+<ul><li><strong>TT</strong> · forkortelsen er navnet; «Tre tre-grunnsetninger» står i det første innleggets panel og gjentas ikke her.</li><li><strong>Confirmed / Unresolved</strong> · statusordene i malens grammatikk: oversatt som «Bekreftet» og «Uavklart» i teksten, men selve ordet i filene er engelsk, fordi sjekkeren leser det.</li><li><strong>crosswalk</strong> · «kryssreferanse» i teksten, det engelske feltnavnet i parentes, fordi feltet heter det i filen.</li><li><strong>digest</strong> · «kontrollsum» i teksten; alternativene «fingeravtrykk» og «sammendragsverdi» ble vurdert; kontrollsum er ordet norske lesere kjenner fra programvare, selv om det strengt tatt dekker mer.</li><li><strong>handoff / dropoff</strong> · «overlevering» og «avlevering»: begge finnes i bruk, så de oversettes som normalt, med engelsk i parentes første gang fordi malens fil bruker de engelske ordene som poster.</li></ul>
+<p><strong>Oversatt som normalt</strong></p>
+<ul><li><strong>template</strong> → mal · <strong>checker</strong> → sjekker · <strong>self-test</strong> → selvtest · <strong>ledger</strong> → register (ikke «hovedbok», som drar mot regnskap) · <strong>issue</strong> → sak · <strong>observed error</strong> → observert feil · <strong>fix trial</strong> → utbedringsforsøk · <strong>record change</strong> → endring i posten · <strong>look-alike pair</strong> → forvekslingspar · <strong>silent promotion</strong> → stille opprykk · <strong>owner statement</strong> → eierens utsagn · <strong>triage</strong> → prioritering · <strong>roll back</strong> → rulle tilbake · <strong>screened</strong> → gjennomgått.</li><li><strong>bare</strong> → naken · ordet er bevisst: «tom» ville vært feil, malene er ikke tomme, de har akkurat nok til å vise hver regel én gang.</li><li><strong>the originator</strong> → opphavspersonen, som i det første innlegget.</li></ul>
+<p><strong>Holdt utenfor.</strong> Ingen av Labens egne ord kommer inn i dette innlegget, på engelsk eller norsk, fordi Laben holdes tilbake til et senere innlegg.</p>
+</article>
+<p class="pdf"><a href="TT-second-post.pdf">Alle 4 delene som én PDF</a></p>
+<section class="licence">
+  <h2>Lisens</h2>
+  <p>Teksten på denne siden er lisensiert under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.no">CC BY-SA 4.0</a>; koden i malene under <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL-3.0</a>. Ta hva som helst, gi kreditt, gi tilbake på samme måte.</p>
+</section>
+<footer><p>&lt;3 TT &lt;3</p></footer>
+</main>
+<script src="../../ui.js"></script>
+</body>
+</html>
