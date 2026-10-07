@@ -1,12 +1,13 @@
 /* TT site stylesheet. */
 :root {
-  --bg: #f7f5ef;
+  --bg: #ffffff;
   --text: #1f2421;
   --muted: #5d665f;
   --accent: #2f6b4f;
   --rule: #d9d4c7;
   --violet: #6f4fa0;
   --select: #e4d9f4;
+  --shadow: 0.06em 0.06em 0 rgba(111, 79, 160, 0.41);
   --knob: 1;
   color-scheme: light dark;
 }
@@ -20,6 +21,7 @@
     --rule: #2c332d;
     --violet: #b9a0e0;
     --select: #45355f;
+    --shadow: 0.06em 0.06em 0 rgba(185, 160, 224, 0.41);
   }
 }
 
@@ -182,18 +184,18 @@ footer {
 
 /* Reader controls (5 Oct 2026): an explicit theme beats the system one; a font choice; an optional text shadow. */
 :root[data-theme="light"] {
-  --bg: #f7f5ef; --text: #1f2421; --muted: #5d665f; --accent: #2f6b4f; --rule: #d9d4c7; --violet: #6f4fa0; --select: #e4d9f4;
-  color-scheme: light;
+  --bg: #ffffff; --text: #1f2421; --muted: #5d665f; --accent: #2f6b4f; --rule: #d9d4c7; --violet: #6f4fa0; --select: #e4d9f4;
+  --shadow: 0.06em 0.06em 0 rgba(111, 79, 160, 0.41);
+  color-scheme: only light;
 }
 :root[data-theme="dark"] {
   --bg: #121512; --text: #e8e5dc; --muted: #a3ab9f; --accent: #8cc5a4; --rule: #2c332d; --violet: #b9a0e0; --select: #45355f;
+  --shadow: 0.06em 0.06em 0 rgba(185, 160, 224, 0.41);
   color-scheme: dark;
 }
 :root[data-font="sans"] body { font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
 :root[data-font="mono"] body { font-family: ui-monospace, Consolas, "Courier New", monospace; }
-:root[data-shadow="on"] main { text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45); }
-:root[data-theme="light"][data-shadow="on"] main { text-shadow: 0 1px 2px rgba(0, 0, 0, 0.18); }
-@media (prefers-color-scheme: light) { :root:not([data-theme="dark"])[data-shadow="on"] main { text-shadow: 0 1px 2px rgba(0, 0, 0, 0.18); } }
+:root[data-shadow="on"] main { text-shadow: var(--shadow); }
 .knob select {
   font: 0.8rem/1 Georgia, "Times New Roman", serif;
   padding: 0.35rem 0.4rem;
