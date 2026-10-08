@@ -27,6 +27,7 @@ To report something, open an issue here: GitHub offers TT's issue and error form
 | TT: a living method for keeping people, systems and evidence connected. | 27 September 2026 | [PDF](public/TT-first-post-EN.pdf) |
 | Second post: two of TT's own systems, shipped bare, so you can run them. | 5 October 2026 | [PDF](public/second-post/TT-second-post-EN.pdf) |
 | Third post: the three tenets in a life, and what straying from them seems to cost. | 7 October 2026 | [PDF](public/third-post/TT-third-post-EN.pdf) |
+| Fourth post: two receipts for the first tenet. | 8 October 2026 | [PDF](public/fourth-post/TT-fourth-post-EN.pdf) |
 
 Each post is also an HTML page in `public/`; `serve.py` shows them on your own computer.
 
@@ -81,6 +82,7 @@ Med det første innleggets egne ord:
 | TT: en levende metode for å holde mennesker, systemer og bevis forbundet. | 27. september 2026 | [PDF](public/no/TT-first-post-NO.pdf) |
 | Andre innlegg: to av TTs egne systemer, levert nakne, så du kan kjøre dem. | 5. oktober 2026 | [PDF](public/no/second-post/TT-second-post-NO.pdf) |
 | Tredje innlegg: de tre trådene i et liv, og hva det ser ut til å koste å komme bort fra dem. | 7. oktober 2026 | [PDF](public/no/third-post/TT-third-post-NO.pdf) |
+| Fjerde innlegg: to belegg for den første grunnsetningen. | 8. oktober 2026 | [PDF](public/no/fourth-post/TT-fourth-post-NO.pdf) |
 
 Hver norsk utgave har en egen del om hvordan den ble oversatt.
 
