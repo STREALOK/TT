@@ -38,12 +38,29 @@ Two of the systems TT runs on, shipped bare so anyone can copy and run them. Bot
 - [templates/dictionary/](templates/dictionary/): one vocabulary kept from three sides (human, formal, mathematical), one rule (a term is Confirmed only when its owner has stated it plainly), and `check_dictionary.py`, which proves the files are well formed and prints one digest two people can compare. The optional layer is a screened extract of TT's own dictionary.
 - [templates/issue-error-tracking/](templates/issue-error-tracking/): issues, observed errors, fix trials and record changes kept as separate records, a weighted triage score with its dimensions in the open, and `track.py`, which validates a ledger and builds local or public reports. English and Norwegian forms (`ISSUE-RECORD.md`, `ERROR-RECORD.md`, `RAPPORTSKJEMA-NO.md`), the reporting policy (`ISSUE-POLICY.md`, `FEIL-OG-SAKSPOLITIKK-NO.md`), and a fictional example in `optional/`.
 
+## The matrix at a glance
+
+Every problem met while TT was run day to day, sorted by where it came from. Counted on 10 October 2026: 481 problems logged since 18 September 2026, 345 still open or being watched, 132 fixed, and 35 more slips caught by the checks before they landed. The full breakdown puts problems of the same kind on one line, each with the date it was first confirmed: [docs/matrix-by-category-EN.md](docs/matrix-by-category-EN.md).
+
+| Where it came from | Logged | Still open | Fixed | First confirmed |
+|---|---|---|---|---|
+| Connections and safety gates (bridges, plugins, filters, pushing) | 160 | 107 | 52 | 18 September 2026 |
+| The host app (Claude Cowork: sessions, compaction, model switching) | 125 | 102 | 22 | 18 September 2026 |
+| Home-made tools and checkers | 86 | 55 | 30 | 18 September 2026 |
+| Working rules and projects | 40 | 28 | 11 | 18 September 2026 |
+| The Codex side (OpenAI's Codex, across the bridge) | 35 | 25 | 10 | 18 September 2026 |
+| The AI's own reasoning | 29 | 24 | 5 | 18 September 2026 |
+| Official documentation against the real app | 6 | 4 | 2 | 18 September 2026 |
+
+A first-confirmed date is the earliest the register can show, not proof of the very first time a problem happened.
+
 ## What is in this repository
 
 | Path | What it is |
 |---|---|
 | [`public/`](public/) | The site: plain HTML, CSS and a little JavaScript, no build step and nothing to install. Every post is a page and a PDF; each translation sits in its own folder, such as `public/no/`, and each PDF linked here carries its language in its name (`-EN`, `-NO`). |
 | [`templates/`](templates/) | Some of the systems TT runs on, shipped bare (see Templates). |
+| [`docs/`](docs/) | Documentation: the matrix, every problem met while running TT, sorted by where it came from (see The matrix at a glance). |
 | [`tools/`](tools/) | `prepush_check.py`: run before a push, it lists every added line that looks project-internal, and every number in prose, for a person to check. |
 | [`.github/`](.github/) | The issue and error report forms GitHub offers when an issue is opened here, and a workflow, run by hand, that publishes chosen files as a Release with a sha256 manifest. |
 | [`serve.py`](serve.py) | Serves `public/` on your own computer and reloads an open page when a file is saved; nothing outside your computer can reach it. |
@@ -89,3 +106,19 @@ Hver norsk utgave har en egen del om hvordan den ble oversatt.
 ### Maler
 
 To av systemene TT bygger på, levert nakne så hvem som helst kan kopiere og kjøre dem; hver mappe har sin egen README, en sjekker med selvtest og et valgfritt lag med eksempler holdt adskilt fra de nakne filene. [Ordboken](templates/dictionary/): ett ordforråd fra tre sider, én regel (et ord er bekreftet først når eieren har sagt det rett ut). [Feil- og sakssporing](templates/issue-error-tracking/): saker, observerte feil, utbedringsforsøk og endringer som hver sin post, en vektet prioritering med dimensjonene i det åpne, og skjemaer og retningslinjer på norsk.
+
+### Matrisen i korte trekk
+
+Alle problemer som dukket opp mens TT ble brukt fra dag til dag, sortert etter hvor de kom fra. Talt 10. oktober 2026: 481 problemer ført opp siden 18. september 2026, 345 fortsatt åpne eller under oppsyn, 132 fikset, og 35 glipper til som sjekkene fanget før de slapp gjennom. Hele oversikten, med hver gruppe av samme slag på én linje og datoen den først ble bekreftet, ligger på engelsk i [docs/matrix-by-category-EN.md](docs/matrix-by-category-EN.md).
+
+| Hvor det kom fra | Ført opp | Fortsatt åpne | Fikset | Først bekreftet |
+|---|---|---|---|---|
+| Forbindelser og sikkerhetssperrer (broer, tillegg, filtre, opplasting) | 160 | 107 | 52 | 18. september 2026 |
+| Vertsappen (Claude Cowork: økter, komprimering, modellbytte) | 125 | 102 | 22 | 18. september 2026 |
+| Hjemmelagde verktøy og sjekkere | 86 | 55 | 30 | 18. september 2026 |
+| Arbeidsregler og prosjekter | 40 | 28 | 11 | 18. september 2026 |
+| Codex-siden (OpenAIs Codex, over broen) | 35 | 25 | 10 | 18. september 2026 |
+| KI-ens egen tenkning | 29 | 24 | 5 | 18. september 2026 |
+| Offisiell dokumentasjon mot den faktiske appen | 6 | 4 | 2 | 18. september 2026 |
+
+En dato for første bekreftelse er det tidligste registeret kan vise, ikke bevis for første gang problemet oppsto.
