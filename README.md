@@ -40,6 +40,8 @@ Two of the systems TT runs on, shipped bare so anyone can copy and run them. Bot
 
 ## The matrix at a glance
 
+### Claude-side register
+
 Every problem met while TT was run day to day, sorted by where it came from. Counted on 10 October 2026: 481 problems logged since 18 September 2026, 345 still open or being watched, 132 fixed, and 35 more slips caught by the checks before they landed. The full breakdown puts problems of the same kind on one line, each with the date it was first confirmed: [docs/matrix-by-category-EN.md](docs/matrix-by-category-EN.md).
 
 | Where it came from | Logged | Still open | Fixed | First confirmed |
@@ -53,6 +55,34 @@ Every problem met while TT was run day to day, sorted by where it came from. Cou
 | Official documentation against the real app | 6 | 4 | 2 | 18 September 2026 |
 
 A first-confirmed date is the earliest the register can show, not proof of the very first time a problem happened.
+
+### Codex records: a separate scope
+
+The matrix above describes the Claude-side register. Codex records are kept in separate files and separate entries: [Codex matrix overview](docs/codex-matrix-overview-EN.md).
+
+The Codex catalogue contains **287 catalogue headings**: **195 legacy source-defined families**, preserving **708 source rows**, plus **92 later entries**.
+
+By category, counted on 10 October 2026:
+
+| Category | Catalog headings | Older families | Later additions |
+|---|---:|---:|---:|
+| Host and app | 25 | 18 | 7 |
+| Cloud and transport | 4 | 2 | 2 |
+| Execution tools | 158 | 104 | 54 |
+| Context and continuity | 19 | 5 | 14 |
+| Workflow and authority | 33 | 31 | 2 |
+| Model and tool use | 8 | 1 | 7 |
+| Documentation and state | 31 | 26 | 5 |
+| Project and content | 9 | 8 | 1 |
+| **Total** | **287** | **195** | **92** |
+
+Verified current totals of open or fixed problems are not yet established for this catalogue.
+
+These counts use different units: catalogue headings, source rows and later entries. Their overlap with each other and with the Claude-side register is unresolved. They do not establish independently confirmed incident counts, and there is no combined total.
+
+**Why consolidation is waiting:** This work is funded through personal subscriptions. Intensive work with frontier models, recovery and documentation all consume the subscriptions' usage allowances. On 10 October 2026, the maintainer reported that a 5× Codex subscription plus one usage reset in the same week had still not covered a full week of work. A 20× Claude subscription had reached 99% of its overall weekly allowance roughly 12–24 hours before its next reset. Consolidation is waiting for enough usage capacity to review both catalogues together; subscription costs also constrain this personally funded work.
+
+Consolidation will follow a later reconciliation of provenance, counting units and overlapping records. The separate catalogues preserve their own evidence and scope until that work is complete.
 
 ## What is in this repository
 
