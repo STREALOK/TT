@@ -6,13 +6,14 @@ This repository holds TT's site: the posts as pages and PDFs, some of the system
 
 # Licence
 ### The code:
-(the page structure, stylesheets, scripts and `serve.py`)
-is licensed under the GNU Affero General Public License, version 3; see `LICENSE`.
+(the page structure, stylesheets, scripts and [`serve.py`](serve.py))
+is licensed under the GNU Affero General Public License, version 3; see [`LICENSE`](LICENSE).
 ### The writing:
 (the words on the pages and in the posts)
-is licensed under Creative Commons Attribution-ShareAlike 4.0 International; see `LICENSES/CC-BY-SA-4.0.txt`.
+is licensed under Creative Commons Attribution-ShareAlike 4.0 International; see [`LICENSES/CC-BY-SA-4.0.txt`](LICENSES/CC-BY-SA-4.0.txt).
 
 In short: take anything, give credit, give back the same way. (Open-Source)
+
 (Note from Me Myself: personally, imo, if you want to share this personally/privately to anyone, no restriction, no credit needed either ofc.. :p really just if you repost/remake/republish it anywhere would i prefer credit where credit is due please, thank you for your time <3 TT <3)
 
 ## What TT is
@@ -42,7 +43,7 @@ To report something, open an issue here: GitHub offers TT's issue and error form
 | Fifth post: Dante's Inferno, read through the three tenets. | 15 October 2026 | [PDF](public/fifth-post/TT-5-dantes-inferno-EN.pdf) |
 | Sixth post: the religious connection. | 15 October 2026 | [PDF](public/sixth-post/TT-6-the-religious-connection-EN.pdf) |
 
-Each post is also an HTML page in `public/`; `serve.py` shows them on your own computer.
+Each post is also an HTML page in [`public/`](public/); [`serve.py`](serve.py) shows them on your own computer.
 
 ## Templates
 
@@ -101,15 +102,15 @@ Consolidation will follow a later reconciliation of provenance, counting units a
 
 | Path | What it is |
 |---|---|
-| [`public/`](public/) | The site: plain HTML, CSS and a little JavaScript, no build step and nothing to install. Every post is a page and a PDF; each translation sits in its own folder, such as `public/no/`, and each PDF linked here carries its language in its name (`-EN`, `-NO`). |
+| [`public/`](public/) | The site: plain HTML, CSS and a little JavaScript, no build step and nothing to install. Every post is a page and a PDF; each translation sits in its own folder, such as [`public/no/`](public/no/), and each PDF linked here carries its language in its name (`-EN`, `-NO`). |
 | [`templates/`](templates/) | Some of the systems TT runs on, shipped bare (see Templates). |
 | [`docs/`](docs/) | Documentation: the matrix, every problem met while running TT, sorted by where it came from (see The matrix at a glance). |
 | [`tools/`](tools/) | `prepush_check.py`: run before a push, it lists every added line that looks project-internal, and every number in prose, for a person to check. |
 | [`.github/`](.github/) | The issue and error report forms GitHub offers when an issue is opened here, and a workflow, run by hand, that publishes chosen files as a Release with a sha256 manifest. |
-| [`serve.py`](serve.py) | Serves `public/` on your own computer and reloads an open page when a file is saved; nothing outside your computer can reach it. |
-| [`wrangler.jsonc`](wrangler.jsonc) | The settings for serving `public/` with Cloudflare Workers. |
+| [`serve.py`](serve.py) | Serves [`public/`](public/) on your own computer and reloads an open page when a file is saved; nothing outside your computer can reach it. |
+| [`wrangler.jsonc`](wrangler.jsonc) | The settings for serving [`public/`](public/) with Cloudflare Workers. |
 | [`LICENSE`](LICENSE) | The GNU Affero General Public License, version 3, for the code. |
-| [`LICENSES/`](LICENSES/) | `CC-BY-SA-4.0.txt`, for the writing. |
+| [`LICENSES/`](LICENSES/) | [`CC-BY-SA-4.0.txt`](LICENSES/CC-BY-SA-4.0.txt), for the writing. |
 
 ## History
 
@@ -121,13 +122,14 @@ Dette kodelageret inneholder TTs nettsted: innleggene som sider og PDF-er, noen 
 
 # Lisens
 ### Koden:
-(sidestrukturen, stilarkene, skriptene og `serve.py`)
-er lisensiert under GNU Affero General Public License, version 3; se `LICENSE`.
+(sidestrukturen, stilarkene, skriptene og [`serve.py`](serve.py))
+er lisensiert under GNU Affero General Public License, version 3; se [`LICENSE`](LICENSE).
 ### Teksten:
 (ordene på sidene og i innleggene)
-er lisensiert under Creative Commons Attribution-ShareAlike 4.0 International; se `LICENSES/CC-BY-SA-4.0.txt`.
+er lisensiert under Creative Commons Attribution-ShareAlike 4.0 International; se [`LICENSES/CC-BY-SA-4.0.txt`](LICENSES/CC-BY-SA-4.0.txt).
 
 Kårt sakt: ta hva du vill, gi navngitt kreditering, gi tilbake på samme vis. (Open-Source)
+
 (Notat fra Meg Selv: personlig, såvidt jeg bryr meg, hvis du vil dele dette personlig/privat med hvem som helst, ingen begrensning, trengs ingen kreditt heller selvfølgelig.. :p det er egentlig bare hvis du poster/lager om TT og/eller re-publiserer det på nytt et sted at jeg helst vil ha kreditt der kreditt er fortjent, takk for din tid <3 TT <3)
 
 ## Hva TT er
@@ -157,7 +159,7 @@ Vil du melde fra om noe, åpner du en sak her: GitHub tilbyr TTs skjemaer for sa
 | Femte innlegg: Dantes Inferno, lest gjennom de tre grunnsetningene. | 15. oktober 2026 | [PDF](public/no/fifth-post/TT-5-dantes-inferno-NO.pdf) |
 | Sjette innlegg: den religiøse forbindelsen. | 15. oktober 2026 | [PDF](public/no/sixth-post/TT-6-den-religiose-forbindelsen-NO.pdf) |
 
-Hvert innlegg er også en HTML-side i `public/`; `serve.py` viser dem på din egen datamaskin.
+Hvert innlegg er også en HTML-side i [`public/`](public/); [`serve.py`](serve.py) viser dem på din egen datamaskin.
 
 Hver norsk utgave har en egen del om hvordan den ble oversatt.
 
@@ -218,15 +220,15 @@ Sammenslåingen kommer etter en senere avstemming av opphav, telleenheter og ove
 
 | Sti | Hva det er |
 |---|---|
-| [`public/`](public/) | Nettstedet: ren HTML, CSS og litt JavaScript, uten byggetrinn og uten noe å installere. Hvert innlegg er en side og en PDF; hver oversettelse ligger i sin egen mappe, som `public/no/`, og hver PDF som lenkes her, har språket sitt i navnet (`-EN`, `-NO`). |
+| [`public/`](public/) | Nettstedet: ren HTML, CSS og litt JavaScript, uten byggetrinn og uten noe å installere. Hvert innlegg er en side og en PDF; hver oversettelse ligger i sin egen mappe, som [`public/no/`](public/no/), og hver PDF som lenkes her, har språket sitt i navnet (`-EN`, `-NO`). |
 | [`templates/`](templates/) | Noen av systemene TT bygger på, levert nakne (se Maler). |
 | [`docs/`](docs/) | Dokumentasjon: matrisen, hvert problem som dukket opp mens TT ble brukt, sortert etter hvor det kom fra (se Matrisen i korte trekk). |
 | [`tools/`](tools/) | `prepush_check.py`: kjørt før en opplasting lister den opp hver tilføyde linje som ser prosjektintern ut, og hvert tall i løpende tekst, så et menneske kan sjekke dem. |
 | [`.github/`](.github/) | Skjemaene for saks- og feilrapporter som GitHub tilbyr når en sak åpnes her, og en arbeidsflyt, kjørt for hånd, som publiserer utvalgte filer som en Release med et sha256-manifest. |
-| [`serve.py`](serve.py) | Viser `public/` på din egen datamaskin og laster en åpen side på nytt når en fil lagres; ingenting utenfor datamaskinen din kan nå den. |
-| [`wrangler.jsonc`](wrangler.jsonc) | Innstillingene for å vise `public/` med Cloudflare Workers. |
+| [`serve.py`](serve.py) | Viser [`public/`](public/) på din egen datamaskin og laster en åpen side på nytt når en fil lagres; ingenting utenfor datamaskinen din kan nå den. |
+| [`wrangler.jsonc`](wrangler.jsonc) | Innstillingene for å vise [`public/`](public/) med Cloudflare Workers. |
 | [`LICENSE`](LICENSE) | GNU Affero General Public License, version 3, for koden. |
-| [`LICENSES/`](LICENSES/) | `CC-BY-SA-4.0.txt`, for teksten. |
+| [`LICENSES/`](LICENSES/) | [`CC-BY-SA-4.0.txt`](LICENSES/CC-BY-SA-4.0.txt), for teksten. |
 
 ## Historikk
 
