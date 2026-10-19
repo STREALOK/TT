@@ -1,0 +1,14 @@
+# Old PDF addresses keep working: the posts' PDFs were renamed on 19 October 2026 to TT-<number>-<subject>-<language>.pdf
+/TT-first-post-EN.pdf /TT-1-a-living-method-EN.pdf 301
+/no/TT-first-post-NO.pdf /no/TT-1-en-levende-metode-NO.pdf 301
+/no/TT-first-post.pdf /no/TT-1-en-levende-metode-NO.pdf 301
+/second-post/TT-second-post-EN.pdf /second-post/TT-2-two-of-tts-own-systems-EN.pdf 301
+/second-post/TT-second-post.pdf /second-post/TT-2-two-of-tts-own-systems-EN.pdf 301
+/no/second-post/TT-second-post-NO.pdf /no/second-post/TT-2-to-av-tts-egne-systemer-NO.pdf 301
+/no/second-post/TT-second-post.pdf /no/second-post/TT-2-to-av-tts-egne-systemer-NO.pdf 301
+/third-post/TT-third-post-EN.pdf /third-post/TT-3-the-three-tenets-in-a-life-EN.pdf 301
+/third-post/TT-third-post.pdf /third-post/TT-3-the-three-tenets-in-a-life-EN.pdf 301
+/no/third-post/TT-third-post-NO.pdf /no/third-post/TT-3-de-tre-tradene-i-et-liv-NO.pdf 301
+/no/third-post/TT-third-post.pdf /no/third-post/TT-3-de-tre-tradene-i-et-liv-NO.pdf 301
+/fourth-post/TT-fourth-post-EN.pdf /fourth-post/TT-4-two-receipts-for-the-first-tenet-EN.pdf 301
+/no/fourth-post/TT-fourth-post-NO.pdf /no/fourth-post/TT-4-to-belegg-for-den-forste-grunnsetningen-NO.pdf 301
