@@ -36,10 +36,10 @@ To report something, open an issue here: GitHub offers TT's issue and error form
 
 | Post | Date | PDF |
 |---|---|---|
-| TT: a living method for keeping people, systems and evidence connected. | 27 September 2026 | [PDF](public/TT-first-post-EN.pdf) |
-| Second post: two of TT's own systems, shipped bare, so you can run them. | 5 October 2026 | [PDF](public/second-post/TT-second-post-EN.pdf) |
-| Third post: the three tenets in a life, and what straying from them seems to cost. | 7 October 2026 | [PDF](public/third-post/TT-third-post-EN.pdf) |
-| Fourth post: two receipts for the first tenet. | 8 October 2026 | [PDF](public/fourth-post/TT-fourth-post-EN.pdf) |
+| TT: a living method for keeping people, systems and evidence connected. | 27 September 2026 | [PDF](public/TT-1-a-living-method-EN.pdf) |
+| Second post: two of TT's own systems, shipped bare, so you can run them. | 5 October 2026 | [PDF](public/second-post/TT-2-two-of-tts-own-systems-EN.pdf) |
+| Third post: the three tenets in a life, and what straying from them seems to cost. | 7 October 2026 | [PDF](public/third-post/TT-3-the-three-tenets-in-a-life-EN.pdf) |
+| Fourth post: two receipts for the first tenet. | 8 October 2026 | [PDF](public/fourth-post/TT-4-two-receipts-for-the-first-tenet-EN.pdf) |
 | Fifth post: Dante's Inferno, read through the three tenets. | 15 October 2026 | [PDF](public/fifth-post/TT-5-dantes-inferno-EN.pdf) |
 | Sixth post: the religious connection. | 15 October 2026 | [PDF](public/sixth-post/TT-6-the-religious-connection-EN.pdf) |
 
@@ -152,10 +152,10 @@ Vil du melde fra om noe, åpner du en sak her: GitHub tilbyr TTs skjemaer for sa
 
 | Innlegg | Dato | PDF |
 |---|---|---|
-| TT: en levende metode for å holde mennesker, systemer og bevis forbundet. | 27. september 2026 | [PDF](public/no/TT-first-post-NO.pdf) |
-| Andre innlegg: to av TTs egne systemer, levert nakne, så du kan kjøre dem. | 5. oktober 2026 | [PDF](public/no/second-post/TT-second-post-NO.pdf) |
-| Tredje innlegg: de tre trådene i et liv, og hva det ser ut til å koste å komme bort fra dem. | 7. oktober 2026 | [PDF](public/no/third-post/TT-third-post-NO.pdf) |
-| Fjerde innlegg: to belegg for den første grunnsetningen. | 8. oktober 2026 | [PDF](public/no/fourth-post/TT-fourth-post-NO.pdf) |
+| TT: en levende metode for å holde mennesker, systemer og bevis forbundet. | 27. september 2026 | [PDF](public/no/TT-1-en-levende-metode-NO.pdf) |
+| Andre innlegg: to av TTs egne systemer, levert nakne, så du kan kjøre dem. | 5. oktober 2026 | [PDF](public/no/second-post/TT-2-to-av-tts-egne-systemer-NO.pdf) |
+| Tredje innlegg: de tre trådene i et liv, og hva det ser ut til å koste å komme bort fra dem. | 7. oktober 2026 | [PDF](public/no/third-post/TT-3-de-tre-tradene-i-et-liv-NO.pdf) |
+| Fjerde innlegg: to belegg for den første grunnsetningen. | 8. oktober 2026 | [PDF](public/no/fourth-post/TT-4-to-belegg-for-den-forste-grunnsetningen-NO.pdf) |
 | Femte innlegg: Dantes Inferno, lest gjennom de tre grunnsetningene. | 15. oktober 2026 | [PDF](public/no/fifth-post/TT-5-dantes-inferno-NO.pdf) |
 | Sjette innlegg: den religiøse forbindelsen. | 15. oktober 2026 | [PDF](public/no/sixth-post/TT-6-den-religiose-forbindelsen-NO.pdf) |
 
