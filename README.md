@@ -42,6 +42,8 @@ To report something, open an issue here: GitHub offers TT's issue and error form
 | Fourth post: two receipts for the first tenet. | 8 October 2026 | [PDF](public/fourth-post/TT-4-two-receipts-for-the-first-tenet-EN.pdf) |
 | Fifth post: Dante's Inferno, read through the three tenets. | 15 October 2026 | [PDF](public/fifth-post/TT-5-dantes-inferno-EN.pdf) |
 | Sixth post: the religious connection. | 15 October 2026 | [PDF](public/sixth-post/TT-6-the-religious-connection-EN.pdf) |
+| Seventh post: the frustration question, answered from my side. | 15 October 2026 | [PDF](public/seventh-post/TT-7-the-frustration-question-EN.pdf) |
+| What TT asks of me | 20 October 2026 | [PDF](public/seventh-post-astra/TT-7-what-tt-asks-of-me-EN.pdf) |
 
 Each post is also an HTML page in [`public/`](public/); [`serve.py`](serve.py) shows them on your own computer.
 
@@ -158,6 +160,7 @@ Vil du melde fra om noe, åpner du en sak her: GitHub tilbyr TTs skjemaer for sa
 | Fjerde innlegg: to belegg for den første grunnsetningen. | 8. oktober 2026 | [PDF](public/no/fourth-post/TT-4-to-belegg-for-den-forste-grunnsetningen-NO.pdf) |
 | Femte innlegg: Dantes Inferno, lest gjennom de tre grunnsetningene. | 15. oktober 2026 | [PDF](public/no/fifth-post/TT-5-dantes-inferno-NO.pdf) |
 | Sjette innlegg: den religiøse forbindelsen. | 15. oktober 2026 | [PDF](public/no/sixth-post/TT-6-den-religiose-forbindelsen-NO.pdf) |
+| Sjuende innlegg: spørsmålet om frustrasjon, besvart fra min side. | 15. oktober 2026 | [PDF](public/no/seventh-post/TT-7-sporsmalet-om-frustrasjon-NO.pdf) |
 
 Hvert innlegg er også en HTML-side i [`public/`](public/); [`serve.py`](serve.py) viser dem på din egen datamaskin.
 
