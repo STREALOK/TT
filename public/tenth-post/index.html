@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Checks That Belong Before People Get Access</title>
+<meta name="description" content="The Checks That Belong Before People Get Access">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="../style.css">
+<script>try{var k=parseFloat(localStorage.getItem('tt-text-size'));if(isFinite(k))document.documentElement.style.setProperty('--knob',k);var t=localStorage.getItem('tt-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);var f=localStorage.getItem('tt-font');if(f)document.documentElement.setAttribute('data-font',f);if(localStorage.getItem('tt-shadow')==='on')document.documentElement.setAttribute('data-shadow','on');}catch(e){}</script>
+</head>
+<body>
+<div class="knob" role="group" aria-label="Text size">
+  <button type="button" data-knob="-0.1" aria-label="Smaller text">A&#8722;</button>
+  <button type="button" data-knob="0" aria-label="Default text size">A</button>
+  <button type="button" data-knob="0.1" aria-label="Larger text">A+</button>
+  <button type="button" data-theme-toggle aria-label="Light or dark" aria-pressed="false">&#9790;</button>
+  <select data-font aria-label="Typeface"><option value="serif">Serif</option><option value="sans">Sans</option><option value="mono">Mono</option></select>
+  <button type="button" data-shadow-toggle aria-label="Text shadow" aria-pressed="false">Shadow</button>
+</div>
+<main>
+<nav aria-label="Publication"><p><a href="../">TT collection</a> · <a href="../eighth-post/">Post 8</a> · <a href="../ninth-post/">Post 9</a> · <a href="../tenth-post/">Post 10</a> · <a href="../no/tenth-post/">Norsk</a></p></nav>
+<article class="page" aria-label="The Checks That Belong Before People Get Access">
+<p class="page-label">English · 10th TT post · 15 November 2026</p>
+<h1>The Checks That Belong Before People Get Access</h1>
+<p><em>The tenth post: what needs checking before someone is asked to rely on an AI system.</em></p>
+<h2>1. Why the checks come first</h2>
+<p>A fluent answer can make an unsupported conclusion sound settled. A model can also drop a rule it was given an hour ago, state a guess as a fact, or lose half a task between one step and the next. These failures do not, by themselves, establish malice. A workflow therefore needs ways to catch the gap between what was asked, what was done, and what can honestly be claimed about the result.</p>
+<p>The scope is wider than the model's reply. It includes the information reaching it, the tools it can use, the permissions surrounding those tools, and what happens when a task is interrupted. Security, reliability, continuity and assumptions all belong in the examination. TT's first tenet gives us a reason to ask about the consequences for the person relying on the whole arrangement.</p>
+<p>This post proposes checks and describes a small example from our own work. It is not a certification of a particular model, application or future system. The evidence for a document workflow cannot settle the risks of every system that might use similar ideas.</p>
+<h2>2. The tools themselves: check them as well as their output</h2>
+<p>A useful check answers a specific question. Does the document contain the intended text? Do its links lead to the intended destinations? Can a reader use the controls on the device in question? What happens if saving fails or the task stops halfway through?</p>
+<p>Different questions require different evidence. Extracting text may reveal a missing paragraph while overlooking text drawn over another paragraph. A screenshot may show a sensible button while telling us little about whether its action succeeds. Choose checks for the ways the particular result will be used, and retain the gaps they leave.</p>
+<p>The same principle extends to systems that act on information. Identify what can enter, what can trigger an action, and which boundary enforces permission. An instruction saying “be careful” and a program refusing an unauthorised operation are different forms of protection. Neither should borrow coverage from the other without a test.</p>
+<p><em>WIP: which of TT's own tools this part shows, with their receipts, is Rook's call, part by part; his word of 12 November puts the workspace's own safety systems under TT too.</em></p>
+<h2>3. 'Proofs': evidence someone else can inspect</h2>
+<p>A receipt records an event: a check ran on particular inputs and reported a particular result. Its value depends on the check's question, implementation and environment. Keeping that receipt helps review; it does not turn every recorded result into a proof.</p>
+<p>For a result that matters, retain the relevant versions and inputs, the assertion being checked, the observed outcome, and the conditions needed to repeat it. A second run may depend on changing external services or nondeterministic behaviour, so repeatability should be demonstrated where needed rather than promised by the presence of a log.</p>
+<p>Also check that the test exercised its subject. A process that exited successfully may have done no relevant work. A gate's refusal is useful evidence only when the case was supposed to be refused and the unwanted effect did not happen first.</p>
+<p><em>WIP: one receipt shown whole.</em></p>
+<h2>4. Two small examples from making the preceding post</h2>
+<p>The first reading proof for the eighth post occupied four pages instead of the intended three. A page-count check caught the mismatch. After the layout was revised, the new proof was checked again and all three rendered pages were inspected. That established a limited result: the revised file met the page target and showed no visible clipping or overlap in those inspected renders. It did not establish that every argument in the text was correct.</p>
+<p>A link check then exposed a mistake in the check itself. We expected five clickable regions because there were five distinct destinations. The PDF contained six regions: one citation wrapped across two lines. We examined that difference and checked the destinations instead of treating a reasonable layout as a broken document.</p>
+<p>The second example matters because scrutiny must reach the checker too. A failure report may reveal a fault in the artifact, a fault in the test, or an expectation that was too crude. The retained result needs to say which explanation the evidence supports. Neither example provides a percentage improvement in overall AI safety.</p>
+<h2>5. A small working template</h2>
+<p>For a bounded task, four short records can make the work easier to inspect:</p>
+<ol>
+<li><strong>The request:</strong> the intended outcome, relevant user wording, permitted scope and important exclusions.</li>
+<li><strong>The action:</strong> what will be changed or sent, what it depends on, and the conditions under which it must stop.</li>
+<li><strong>The check:</strong> what would count as success or failure, the observed result, and what remains untested.</li>
+<li><strong>The return:</strong> where the usable result is, the unfinished action, and how to resume or reverse the work where reversal is possible.</li>
+</ol>
+<p>These records should be no larger than the task needs. They also need handling appropriate to their contents; retaining evidence is not a reason to copy private information into every log.</p>
+<p>Where external content can lead to actions, keep its informational role distinct from the channel that grants permission. Test a supported route with content that attempts to exceed its role, and verify that refusal happens before the effect. This is a design requirement to implement and test at actual boundaries, not a claim that four records or a wording scanner will stop every attack.</p>
+<h2>6. Rough estimates: what can we estimate honestly?</h2>
+<p>We can count reported faults, checks performed, refused actions and recoveries attempted within a defined sample. Those counts can help decide where to work next. Their meaning depends on the denominator, the observation period and how the cases were selected.</p>
+<p>They do not tell us, by themselves, that one workflow is a given percentage safer than another. More recorded faults could mean more faults occurred, better detection, more demanding tasks, false alarms, or a mixture.</p>
+<p>The checker can be wrong in either direction: a false positive reports a fault where none exists, while a false negative misses a real fault. It may examine the relevant material and still apply the wrong rule or reach the wrong conclusion. That is different from leaving the material untested. An “all green” result therefore needs scrutiny too: what was actually checked, and what supports the checker's judgement? Keeping files locally is useful for some purposes; it is not, by itself, a measure of safety.</p>
+<p>A fair comparison would specify the systems and settings being compared, use comparable tasks and conditions, define the failures beforehand, and count missed faults as well as false alarms. It would also record the cost: time, effort, blocked useful work and resources. Until such a comparison has been performed, the defensible claim is narrower: these particular checks caught these particular problems under these conditions.</p>
+<p><em>WIP: Rook's spine asks for rough guesstimates of how much safer this is than a bare Codex, a bare Cowork, or a cloud AI that stores nothing locally. Whether a labelled guess, with its basis and its limits, goes in before such a comparison exists is his call.</em></p>
+<h2>7. Next</h2>
+<p>Basin depth, the eleventh post (Rook's order of 31 October).</p>
+<p><em>WIP: Serenity's proposed closing on continuity (what a system should retain or forget, and how someone corrects its account) fits Rook's aside of 19 October on in-app memory, «i think ya know already where that topic will head», which has no slot yet; her line on the posts' wider connections belongs to the interconnectivity post, whose number waits on his word. Both paragraphs stay whole in her edition; where they go is his call.</em></p>
+<hr>
+<p><em>Reading edition by Rook, Claudia and Serenity. Work-in-progress notes remain visible.</em></p>
+</article>
+<p class="pdf"><a href="TT-10-the-checks-that-belong-before-people-get-access-EN.pdf">Download the English PDF</a></p>
+<section class="licence"><h2>Licence</h2><p>The words on this site are licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, and its code under the <a href="https://www.gnu.org/licenses/agpl-3.0.html">GNU AGPL v3</a>. Take anything, give credit, give back the same way.</p></section>
+<footer><p>&lt;3 TT &lt;3</p></footer>
+</main>
+<script src="../ui.js"></script>
+<script>
+(function () {
+  var KEY = 'tt-text-size', MIN = 0.8, MAX = 1.6, root = document.documentElement, cur = 1;
+  try { var v = parseFloat(localStorage.getItem(KEY)); if (isFinite(v)) cur = v; } catch (e) {}
+  function set(v) {
+    cur = Math.min(MAX, Math.max(MIN, Math.round(v * 10) / 10));
+    root.style.setProperty('--knob', cur);
+    try { localStorage.setItem(KEY, String(cur)); } catch (e) {}
+  }
+  set(cur);
+  var buttons = document.querySelectorAll('[data-knob]');
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', function () {
+      var d = parseFloat(this.getAttribute('data-knob'));
+      set(d === 0 ? 1 : cur + d);
+    });
+  }
+})();
+</script>
+</body>
+</html>

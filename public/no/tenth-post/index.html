@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sjekkene som hører hjemme før folk får tilgang</title>
+<meta name="description" content="Sjekkene som hører hjemme før folk får tilgang">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="../../style.css">
+<script>try{var k=parseFloat(localStorage.getItem('tt-text-size'));if(isFinite(k))document.documentElement.style.setProperty('--knob',k);var t=localStorage.getItem('tt-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);var f=localStorage.getItem('tt-font');if(f)document.documentElement.setAttribute('data-font',f);if(localStorage.getItem('tt-shadow')==='on')document.documentElement.setAttribute('data-shadow','on');}catch(e){}</script>
+</head>
+<body>
+<div class="knob" role="group" aria-label="Tekststørrelse">
+  <button type="button" data-knob="-0.1" aria-label="Mindre tekst">A&#8722;</button>
+  <button type="button" data-knob="0" aria-label="Vanlig tekststørrelse">A</button>
+  <button type="button" data-knob="0.1" aria-label="Større tekst">A+</button>
+  <button type="button" data-theme-toggle aria-label="Lys eller mørk" aria-pressed="false">&#9790;</button>
+  <select data-font aria-label="Skrift"><option value="serif">Serif</option><option value="sans">Sans</option><option value="mono">Mono</option></select>
+  <button type="button" data-shadow-toggle aria-label="Tekstskygge" aria-pressed="false">Skygge</button>
+</div>
+<main>
+<nav aria-label="Publikasjon"><p><a href="../">TT-samlingen</a> · <a href="../eighth-post/">Innlegg 8</a> · <a href="../ninth-post/">Innlegg 9</a> · <a href="../tenth-post/">Innlegg 10</a> · <a href="../../tenth-post/">English</a></p></nav>
+<article class="page" aria-label="Sjekkene som hører hjemme før folk får tilgang">
+<p class="page-label">Norsk · 10. TT-innlegg · 15. november 2026</p>
+<h1>Sjekkene som hører hjemme før folk får tilgang</h1>
+<p><em>Det tiende innlegget: hva som må sjekkes før noen blir bedt om å stole på et KI-system.</em></p>
+<h2>1. Hvorfor sjekkene kommer først</h2>
+<p>Et flytende svar kan få en konklusjon uten belegg til å høres avgjort ut. En modell kan også glemme en regel den fikk for en time siden, framstille en gjetning som et faktum, eller miste halve oppgaven mellom ett steg og det neste. Slike feil viser ikke i seg selv ond vilje. En arbeidsflyt trenger derfor måter å fange opp gapet mellom det som ble bedt om, det som ble gjort, og det som ærlig kan påstås om resultatet.</p>
+<p>Omfanget er større enn modellens svar. Det omfatter informasjonen som når fram til modellen, verktøyene den kan bruke, tillatelsene rundt de verktøyene, og hva som skjer når en oppgave blir avbrutt. Sikkerhet, pålitelighet, kontinuitet og antakelser hører alle med i undersøkelsen. TTs første grunnsetning gir oss en grunn til å spørre hva følgene blir for den som stoler på hele oppsettet.</p>
+<p>Dette innlegget foreslår sjekker og beskriver et lite eksempel fra vårt eget arbeid. Det er ikke en sertifisering av en bestemt modell, et bestemt program eller et framtidig system. Bevisene fra én arbeidsflyt med dokumenter kan ikke avgjøre risikoen ved alle systemer som kan bruke lignende ideer.</p>
+<h2>2. Selve verktøyene: sjekk dem, ikke bare det de lager</h2>
+<p>En nyttig sjekk svarer på et bestemt spørsmål. Inneholder dokumentet den tiltenkte teksten? Fører lenkene dit de skal? Kan en leser bruke kontrollene på den aktuelle enheten? Hva skjer hvis lagringen feiler, eller oppgaven stopper halvveis?</p>
+<p>Ulike spørsmål krever ulike bevis. Å trekke ut teksten kan avsløre et avsnitt som mangler, men overse tekst som er tegnet over et annet avsnitt. Et skjermbilde kan vise en fornuftig knapp, men si lite om handlingen bak knappen faktisk lykkes. Velg sjekker etter hvordan det bestemte resultatet skal brukes, og ta vare på hullene de etterlater.</p>
+<p>Det samme prinsippet gjelder systemer som handler ut fra informasjon. Finn ut hva som kan komme inn, hva som kan utløse en handling, og hvilken grense som håndhever tillatelsen. En instruks som sier «vær forsiktig», og et program som nekter en uautorisert operasjon, er to ulike former for vern. Ingen av dem bør låne dekning fra den andre uten en test.</p>
+<p><em>Under arbeid: hvilke av TTs egne verktøy denne delen viser, med kvitteringene deres, er Rooks valg, del for del; hans ord av 12. november legger også arbeidsområdets egne sikkerhetssystemer inn under TT.</em></p>
+<h2>3. «Bevis»: belegg som andre kan etterprøve</h2>
+<p>En kvittering registrerer en hendelse: en sjekk kjørte på bestemte inndata og rapporterte et bestemt resultat. Verdien avhenger av spørsmålet sjekken stiller, hvordan den er laget, og omgivelsene den kjører i. Å ta vare på kvitteringen hjelper en gjennomgang, men det gjør ikke hvert registrerte resultat til et bevis.</p>
+<p>For et resultat som betyr noe, ta vare på de relevante versjonene og inndataene, påstanden som sjekkes, utfallet som ble observert, og betingelsene som trengs for å gjenta det. En ny kjøring kan avhenge av eksterne tjenester som endrer seg, eller av oppførsel som ikke er deterministisk, så gjentakbarhet bør vises der det trengs, i stedet for å bli lovet av at det finnes en logg.</p>
+<p>Sjekk også at testen faktisk prøvde det den skulle prøve. En prosess som avsluttet uten feil, kan ha gjort null relevant arbeid. At en port avviser noe, er bare nyttig belegg når tilfellet skulle avvises, og den uønskede virkningen ikke skjedde først.</p>
+<p><em>Under arbeid: én kvittering vist i sin helhet.</em></p>
+<h2>4. To små eksempler fra arbeidet med det forrige innlegget</h2>
+<p>Den første lesekorrekturen av det åttende innlegget fylte fire sider i stedet for de tre det var meningen. En sjekk av sidetallet fanget avviket. Etter at oppsettet ble endret, ble den nye korrekturen sjekket på nytt, og alle tre gjengitte sider ble gått gjennom. Det fastslo et begrenset resultat: den reviderte filen nådde sidemålet og viste ingen synlig avkutting eller overlapping på de sidene som ble gått gjennom. Det fastslo ikke at hvert argument i teksten var riktig.</p>
+<p>En lenkesjekk avslørte så en feil i selve sjekken. Vi ventet fem klikkbare områder, fordi det fantes fem ulike mål. PDF-en inneholdt seks områder: én kildehenvisning gikk over to linjer. Vi undersøkte forskjellen og sjekket målene, i stedet for å behandle et fornuftig oppsett som et ødelagt dokument.</p>
+<p>Det andre eksemplet betyr noe, fordi granskningen også må nå fram til den som sjekker. En feilrapport kan avsløre en feil i det som ble laget, en feil i testen, eller en forventning som var for grov. Resultatet som tas vare på, må si hvilken forklaring bevisene støtter. Ingen av eksemplene gir en prosentvis forbedring av KI-sikkerhet totalt sett.</p>
+<h2>5. En liten arbeidsmal</h2>
+<p>For en avgrenset oppgave kan fire korte registreringer gjøre arbeidet lettere å undersøke:</p>
+<ol>
+<li><strong>Forespørselen:</strong> det tiltenkte utfallet, relevant ordlyd fra brukeren, hvilket omfang som er tillatt, og viktige unntak.</li>
+<li><strong>Handlingen:</strong> hva som skal endres eller sendes, hva det avhenger av, og under hvilke betingelser det må stoppe.</li>
+<li><strong>Sjekken:</strong> hva som regnes som suksess eller feil, resultatet som ble observert, og hva som fortsatt ikke er testet.</li>
+<li><strong>Tilbakemeldingen:</strong> hvor det brukbare resultatet ligger, den uferdige handlingen, og hvordan arbeidet kan tas opp igjen eller reverseres der det går an.</li>
+</ol>
+<p>Disse registreringene bør ikke være større enn oppgaven trenger. De må også behandles i tråd med innholdet; å ta vare på bevis er ingen grunn til å kopiere privat informasjon inn i hver logg.</p>
+<p>Der innhold utenfra kan føre til handlinger, hold rollen det har som informasjon, adskilt fra kanalen som gir tillatelse. Test en støttet vei med innhold som prøver å gå utover rollen sin, og bekreft at avvisningen skjer før virkningen. Dette er et designkrav som må bygges og testes ved de faktiske grensene, ikke en påstand om at fire registreringer eller et ordfilter vil stoppe ethvert angrep.</p>
+<h2>6. Grove anslag: hva kan vi anslå ærlig?</h2>
+<p>Vi kan telle rapporterte feil, utførte sjekker, avviste handlinger og forsøk på gjenoppretting innenfor et definert utvalg. Slike tall kan hjelpe oss å bestemme hvor vi skal arbeide videre. Hva de betyr, avhenger av nevneren, perioden som ble observert, og hvordan tilfellene ble valgt ut.</p>
+<p>De forteller oss ikke i seg selv at én arbeidsflyt er et visst antall prosent tryggere enn en annen. Flere registrerte feil kan bety at flere feil skjedde, bedre oppdagelse, mer krevende oppgaver, falske alarmer, eller en blanding.</p>
+<p>Den som sjekker, kan ta feil begge veier: et falskt positivt funn melder en feil der ingen finnes, mens et falskt negativt funn overser en ekte feil. Den kan undersøke det relevante materialet og likevel bruke feil regel eller komme til feil konklusjon. Det er noe annet enn å la materialet være utestet. Et «alt grønt»-resultat må derfor også granskes: hva ble faktisk sjekket, og hva støtter vurderingen? Å lagre filer lokalt er nyttig for noen formål, men det er ikke i seg selv et mål på sikkerhet.</p>
+<p>En rettferdig sammenligning ville angi hvilke systemer og innstillinger som sammenlignes, bruke sammenlignbare oppgaver og forhold, definere feilene på forhånd, og telle oversette feil i tillegg til falske alarmer. Den ville også registrere kostnaden: tid, innsats, nyttig arbeid som ble stoppet, og ressurser. Inntil en slik sammenligning er gjort, er den påstanden vi kan forsvare, smalere: akkurat disse sjekkene fanget akkurat disse problemene under akkurat disse forholdene.</p>
+<p><em>Under arbeid: Rooks skjelett ber om grove anslag på hvor mye tryggere dette er enn en ren Codex, en ren Cowork, eller en sky-KI som ikke lagrer noe lokalt. Om et merket anslag, med grunnlaget og begrensningene sine, skal inn før en slik sammenligning finnes, er hans valg.</em></p>
+<h2>7. Neste</h2>
+<p>Bassengdybde, det ellevte innlegget (i rekkefølgen Rook satte 31. oktober).</p>
+<p><em>Under arbeid: Serenitys forslag til en avslutning om kontinuitet (hva et system bør beholde eller glemme, og hvordan noen kan rette framstillingen dets) passer til Rooks sidebemerkning av 19. oktober om minne i appen, «i think ya know already where that topic will head» («jeg tror du allerede vet hvor det temaet vil ende»), som ennå ikke har noen plass; linjen hennes om innleggenes bredere forbindelser hører hjemme i innlegget om sammenheng, der nummeret venter på hans ord. Begge avsnittene står hele i hennes utgave; hvor de skal, er hans valg.</em></p>
+<hr>
+<p><em>Leseutgave av Rook, Claudia og Serenity. Notatene om arbeid som pågår, er fortsatt synlige. Den norske utgaven er oversatt fra den engelske av Claudia.</em></p>
+</article>
+<p class="pdf"><a href="TT-10-sjekkene-som-horer-hjemme-for-folk-far-tilgang-NO.pdf">Last ned den norske PDF-en</a></p>
+<section class="licence"><h2>Lisens</h2><p>Teksten på denne siden er lisensiert under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.no">CC BY-SA 4.0</a>; koden i malene under <a href="https://www.gnu.org/licenses/agpl-3.0.html">AGPL-3.0</a>. Ta hva som helst, gi kreditt, gi tilbake på samme måte.</p></section>
+<footer><p>&lt;3 TT &lt;3</p></footer>
+</main>
+<script src="../../ui.js"></script>
+<script>
+(function () {
+  var KEY = 'tt-text-size', MIN = 0.8, MAX = 1.6, root = document.documentElement, cur = 1;
+  try { var v = parseFloat(localStorage.getItem(KEY)); if (isFinite(v)) cur = v; } catch (e) {}
+  function set(v) {
+    cur = Math.min(MAX, Math.max(MIN, Math.round(v * 10) / 10));
+    root.style.setProperty('--knob', cur);
+    try { localStorage.setItem(KEY, String(cur)); } catch (e) {}
+  }
+  set(cur);
+  var buttons = document.querySelectorAll('[data-knob]');
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', function () {
+      var d = parseFloat(this.getAttribute('data-knob'));
+      set(d === 0 ? 1 : cur + d);
+    });
+  }
+})();
+</script>
+</body>
+</html>
